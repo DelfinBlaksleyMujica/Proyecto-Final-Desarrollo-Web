@@ -1,0 +1,739 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: black;
+  margin: 0;
+}
+
+.logoSpotify {
+  border-radius: 200px;
+}
+
+.logoInstagram {
+  border-radius: 200px;
+}
+
+/*INDEX*/
+.index-container {
+  display: grid;
+  grid-template-columns: 0.6fr 3fr 0.6fr;
+  grid-template-rows: 0.5fr 0.5fr 3fr 2fr 1fr 0.1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo index__Titulo__Container margin__derecho" "margin__izquierdo index__VideoyTexto__Container margin__derecho" "margin__izquierdo index__Suscripciones__Container margin__derecho" "margin__izquierdo index__ManteneteActivado__Container margin__derecho" "margin__izquierdo footer margin__derecho";
+}
+
+.navBar {
+  grid-area: navBar;
+}
+
+.menuDeNavegacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+  align-items: center;
+}
+
+.navBar .menuDeNavegacion li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Bungee";
+  flex-wrap: wrap;
+  font-size: 1.8rem;
+}
+
+@media (max-width: 1200px) {
+  .navBar .menuDeNavegacion li a {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 1200px) {
+  .logoMenuDeNavegacion a img {
+    height: 95%;
+    width: 95%;
+  }
+}
+.index__Titulo__Container {
+  grid-area: index__Titulo__Container;
+  text-shadow: 2rem;
+  font-size: 20px;
+  font-family: "Bungee";
+  font-weight: bolder;
+  color: black;
+  -webkit-text-stroke: 1px white;
+}
+.index__Titulo__Container h1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 1200px) {
+  .index__Titulo__Container {
+    font-size: 19px;
+  }
+}
+.index__VideoyTexto__Container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas: "index__Video__Container" "index__Texto__Container";
+  grid-area: index__VideoyTexto__Container;
+}
+
+.index__Video__Container {
+  grid-area: index__Video__Container;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.index__Video__Container iframe {
+  width: 90%;
+  height: 90%;
+}
+
+.index__Texto__Container {
+  grid-area: index__Texto__Container;
+  background-color: white;
+  font-family: "Bungee";
+  width: 80%;
+  border-radius: 20px;
+  margin-top: 50px;
+  margin-left: 150px;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media (max-width: 1400px) {
+  .index__Texto__Container {
+    margin-left: 100px;
+  }
+}
+@media (max-width: 1200px) {
+  .index__Texto__Container {
+    font-size: 11.4px;
+  }
+}
+.index__Suscripciones__Container {
+  grid-area: index__Suscripciones__Container;
+}
+
+.suscripciones__titulo {
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: "Bungee";
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .suscripciones__titulo {
+    font-size: 28.5px;
+  }
+}
+.suscripciones__parrafo {
+  color: white;
+  font-size: 12px;
+  font-family: "Bungee";
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .suscripciones__parrafo {
+    font-size: 11.4px;
+  }
+}
+.index__Suscripciones__Container form {
+  margin-top: 50px;
+}
+
+.suscripciones__email {
+  width: 200px;
+  height: 20px;
+  background: linear-gradient(to left, silver, white);
+  font-family: "Bungee";
+  font-size: 10px;
+  margin-right: 50px;
+}
+
+@media (max-width: 1200px) {
+  .suscripciones__email {
+    font-size: 9.5px;
+  }
+}
+.suscripciones__button {
+  font-family: "Bungee";
+  background-color: black;
+  color: white;
+  border: solid 2px white;
+  width: 150px;
+  height: 50px;
+}
+
+@media (max-width: 1200px) {
+  .suscripciones__button {
+    width: 142.5px;
+    height: 47.5px;
+    font-size: 11px;
+  }
+}
+.suscripciones {
+  text-align: center;
+}
+
+.index__ManteneteActivado__Container {
+  grid-area: index__ManteneteActivado__Container;
+  border: black solid 2px;
+  text-align: center;
+  background-image: url(../img/e048530980e76d6f60d4b9574b000adc.gif);
+  background-position: 100%;
+}
+
+.canales__titulo {
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: "Bungee";
+  text-align: center;
+  margin-top: 0;
+}
+
+@media (max-width: 1200px) {
+  .canales__titulo {
+    font-size: 28.5px;
+  }
+}
+.index__manteneteActivado__canales ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+  align-items: center;
+}
+.index__manteneteActivado__canales ul li {
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.footer {
+  grid-area: footer;
+  color: white;
+  font-family: "Bungee";
+  background-color: rgb(63, 19, 104);
+}
+
+.footer p {
+  grid-area: footer;
+  color: white;
+  font-family: "Bungee";
+  font-size: 10px;
+  background-color: rgb(63, 19, 104);
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 1200px) {
+  .footer p {
+    font-size: 9.5px;
+  }
+}
+.margin__izquierdo {
+  grid-area: margin__izquierdo;
+}
+
+.margin__derecho {
+  grid-area: margin__derecho;
+}
+
+/*WORLD*/
+.World__Container {
+  display: grid;
+  grid-template-columns: 0.6fr 3fr 0.6fr;
+  grid-template-rows: 0.5fr 0.5fr 5fr 0.1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo World__Titulo__Container margin__derecho" "margin__izquierdo World__AboutUs__Container margin__derecho" "margin__izquierdo footer margin__derecho";
+}
+
+.World__Titulo__Container {
+  grid-area: World__Titulo__Container;
+  font-size: 20px;
+}
+
+@media (max-width: 1200px) {
+  .World__Titulo__Container {
+    font-size: 19px;
+  }
+}
+.World__Titulo__Container h1 {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Bungee";
+  font-weight: bolder;
+  color: black;
+  -webkit-text-stroke: 1px white;
+}
+
+.World__AboutUs__Container {
+  grid-area: World__AboutUs__Container;
+}
+
+.world__activa__titulo {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+@media (max-width: 1200px) {
+  .world__activa__titulo {
+    font-size: 28.5px;
+  }
+}
+.world__Textos__1 {
+  font-family: "Bungee";
+  color: white;
+  width: 100%;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+@media (max-width: 1200px) {
+  .world__Textos__1 {
+    font-size: 11.4px;
+  }
+}
+.world__leyDeAtraccion__titulo {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+@media (max-width: 1200px) {
+  .world__leyDeAtraccion__titulo {
+    font-size: 28.5px;
+  }
+}
+.world__Textos__2 {
+  font-family: "Bungee";
+  color: white;
+  width: 100%;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+@media (max-width: 1200px) {
+  .world__Textos__2 {
+    font-size: 11.4px;
+  }
+}
+.world__vision__titulo {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+@media (max-width: 1200px) {
+  .world__vision__titulo {
+    font-size: 28.5px;
+  }
+}
+.world__Textos__3 {
+  font-family: "Bungee";
+  color: white;
+  width: 100%;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+@media (max-width: 1200px) {
+  .world__Textos__1 {
+    font-size: 11.4px;
+  }
+}
+/*INDOORS*/
+.indoors-container {
+  display: grid;
+  grid-template-columns: 0.6fr 3fr 0.6fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 5.5fr 0.1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo indoors__Titulo__Container margin__derecho" "margin__izquierdo indoors__Subtitulos__Container margin__derecho" "margin__izquierdo indoors__CapitulosyDescripciones__Container margin__derecho" "margin__izquierdo footer margin__derecho";
+}
+
+.indoors__Titulo__Container {
+  font-size: 18px;
+}
+
+@media (max-width: 1200px) {
+  .indoors__Titulo__Container {
+    font-size: 17px;
+  }
+}
+.indoors__Titulo__Container h1 {
+  grid-area: indoors__Titulo__Container;
+  display: flex;
+  color: black;
+  -webkit-text-stroke: 1px white;
+  font-family: "Bungee";
+  justify-content: space-evenly;
+}
+
+.indoors__Subtitulos__Container {
+  display: flex;
+  align-content: space-around;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.episodios__titulo {
+  color: white;
+  font-family: "Bungee";
+}
+
+.indoors__Subtitulos__Container select {
+  font-family: "Bungee";
+  color: white;
+  background-color: black;
+  border: solid 2px white;
+  width: 150px;
+  height: 30px;
+}
+
+@media (max-width: 1200px) {
+  .indoors__Subtitulos__Container select {
+    font-size: 11px;
+  }
+}
+.indoors__CapitulosyDescripciones__Container {
+  display: grid;
+  grid-template-columns: 0.6fr 3fr 0.6fr;
+  grid-template-rows: 1.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: ". indoors__temporada1__episodio1 ." ". indoors__temporada1__descripcion1 .";
+  grid-area: indoors__CapitulosyDescripciones__Container;
+}
+
+.indoors__temporada1__descripcion1 h3 {
+  font-size: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 1200px) {
+  .indoors__temporada1__descripcion1 h3 {
+    font-size: 28.5px;
+  }
+}
+.indoors__temporada1__episodio1 {
+  grid-area: indoors__temporada1__episodio1;
+  display: flex;
+  justify-content: space-around;
+}
+
+.indoors__temporada1__descripcion1 {
+  grid-area: indoors__temporada1__descripcion1;
+  color: white;
+  font-family: "Bungee";
+}
+
+.indoors__temporada1__descripcion1 p {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 1200px) {
+  .indoors__temporada1__descripcion1 p {
+    font-size: 11.4px;
+  }
+}
+/*GALERIA*/
+.gallery-container {
+  display: grid;
+  grid-template-columns: 0.6fr 3fr 0.6fr;
+  grid-template-rows: 0.5fr 0.5fr 5fr 1fr 0.1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo gallery__titulo__container margin__derecho" "margin__izquierdo gallery__main__container margin__derecho" "margin__izquierdo gallery__text__container margin__derecho" "margin__izquierdo footer margin__derecho";
+}
+
+@media (max-width: 1791px) {
+  .gallery-container {
+    display: grid;
+    grid-template-columns: 0.6fr 3fr 0.6fr;
+    grid-template-rows: 0.4fr 0.2fr 6fr 1fr 0.1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo gallery__titulo__container margin__derecho" "margin__izquierdo gallery__main__container margin__derecho" "margin__izquierdo gallery__text__container margin__derecho" "margin__izquierdo footer margin__derecho";
+  }
+}
+.gallery__titulo__container {
+  grid-area: gallery__titulo__container;
+  color: black;
+  -webkit-text-stroke: 1px white;
+  font-size: 18px;
+}
+
+@media (max-width: 1200px) {
+  .gallery__titulo__container {
+    font-size: 17px;
+  }
+}
+.gallery__titulo__container h1 {
+  font-family: "Bungee";
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.gallery__main__container {
+  grid-area: gallery__main__container;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: center;
+}
+.gallery__main__container img {
+  margin: 10px 10px;
+}
+
+.gallery__text__container {
+  grid-area: gallery__text__container;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.gallery__text__container p {
+  font-family: "Bungee";
+  font-size: 12px;
+  width: 80%;
+}
+
+@media (max-width: 1200px) {
+  .gallery__text__container p {
+    font-size: 11.4px;
+  }
+}
+/*CONTACTO*/
+.contact-container {
+  display: grid;
+  grid-template-columns: 0.6fr 3fr 0.6fr;
+  grid-template-rows: 0.5fr 0.5fr 5fr 0.1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo contact__title__container margin__derecho" "margin__izquierdo contact__main__container margin__derecho" "margin__izquierdo footer margin__derecho";
+}
+
+.contact__title__container {
+  grid-area: contact__title__container;
+  font-size: 18px;
+}
+
+@media (max-width: 1200px) {
+  .contact__title__container {
+    font-size: 17px;
+  }
+}
+.contact__title {
+  display: flex;
+  color: black;
+  -webkit-text-stroke: 1px white;
+  font-family: "Bungee";
+  justify-content: space-evenly;
+}
+
+.contact__main__container {
+  grid-area: contact__main__container;
+}
+
+.contact__main__NuestroContacto {
+  display: flex;
+  color: white;
+  font-family: "Bungee";
+  list-style-type: none;
+  justify-content: space-evenly;
+  align-items: baseline;
+  font-size: 13px;
+  margin-left: -80px;
+}
+.contact__main__NuestroContacto li a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .contact__main__NuestroContacto {
+    font-size: 12.4px;
+  }
+}
+.seccionContactos__Nombre {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#Nombre {
+  width: 100%;
+  font-family: "Bungee";
+  margin-top: 50px;
+}
+
+.seccionContactos__Mail {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#Mail {
+  width: 100%;
+  font-family: "Bungee";
+  margin-top: 20px;
+}
+
+.seccionContactos__Telefono {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#Telefono {
+  width: 100%;
+  font-family: "Bungee";
+  margin-top: 20px;
+}
+
+.seccionContactos__Empresa {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#Empresa {
+  width: 100%;
+  font-family: "Bungee";
+  margin-top: 20px;
+}
+
+.seccionContactos__Asunto {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#Asunto {
+  width: 100%;
+  font-family: "Bungee";
+  margin-top: 20px;
+}
+
+.seccionContactos__Mensaje {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#Mensaje {
+  width: 100%;
+  height: 200px;
+  font-family: "Bungee";
+  margin-top: 20px;
+}
+
+@media (max-width: 1200px) {
+  .seccionContactos_Formulario div input {
+    font-size: 11px;
+  }
+
+  .seccionContactos_Formulario div textarea {
+    font-size: 11px;
+  }
+}
+#BotonEnviarContactos {
+  font-family: "Bungee";
+  background-color: black;
+  color: white;
+  border: solid 2px white;
+  width: 150px;
+  height: 50px;
+  margin-top: 150px;
+  margin-left: 610px;
+}
+
+@media (max-width: 1750px) {
+  #BotonEnviarContactos {
+    margin-left: 550px;
+  }
+}
+@media (max-width: 1700px) {
+  #BotonEnviarContactos {
+    margin-left: 520px;
+  }
+}
+@media (max-width: 1650px) {
+  #BotonEnviarContactos {
+    margin-left: 500px;
+  }
+}
+@media (max-width: 1400px) {
+  #BotonEnviarContactos {
+    margin-left: 420px;
+  }
+}
+@media (max-width: 1200px) {
+  #BotonEnviarContactos {
+    margin-left: 360px;
+    width: 142.5px;
+    height: 47.5px;
+    font-size: 11px;
+  }
+}
+/*ANIMACIONES-TRANSFORMACIONES-TRANSICIONES*/
+.logoMenuDeNavegacion:hover {
+  transform: scale(1.05);
+  transition: 1s;
+}
+
+.navBar .menuDeNavegacion li .subrayado:hover {
+  border-bottom: solid 2px white;
+}
+
+.suscripciones__button:hover {
+  color: black;
+  background-color: white;
+  border: solid 2px black;
+}
+
+#BotonEnviarIndex:hover {
+  color: black;
+  background-color: white;
+  border: solid 2px black;
+}
+
+#BotonEnviarContactos:hover {
+  color: black;
+  background-color: white;
+  border: solid 2px black;
+}
+
+#episodios__selectTemporada:hover {
+  color: black;
+  background-color: white;
+  border: solid 2px black;
+}
+
+.gallery__main__container img:hover {
+  transform: scale(1.5);
+  transition: 1s;
+}
+
+/*# sourceMappingURL=styles.css.map */
