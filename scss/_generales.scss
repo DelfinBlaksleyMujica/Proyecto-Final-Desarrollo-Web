@@ -1,0 +1,59 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-image: url(../img/estrellas_Blanco.png);
+    margin: 0;
+}
+
+.navBar { 
+    grid-area: navBar;
+}
+
+.menuDeNavegacion{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+    margin-left: -30px;
+}
+
+
+.navBar .menuDeNavegacion li a{
+    color:white;
+    text-decoration: none;
+    font-family: "Bungee";
+    flex-wrap: wrap;
+    font-size: 1.8rem;
+}
+
+.footer { 
+    grid-area: footer;
+    color: white;
+    font-family: "Bungee";
+    background-color: rgb(63, 19, 104);
+}
+
+
+    
+.footer p{ 
+    grid-area: footer;
+    color: white;
+    font-family: "Bungee";
+    font-size: 10px;
+    background-color: rgb(63, 19, 104);
+    display:flex;
+    justify-content: space-around;
+}
+    
+
+
+.margin__izquierdo { 
+    grid-area: margin__izquierdo;
+}
+
+.margin__derecho { 
+    grid-area: margin__derecho;
+}
