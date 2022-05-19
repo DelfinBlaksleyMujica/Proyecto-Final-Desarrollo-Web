@@ -761,6 +761,8 @@ body{
     display:flex;
     justify-content: center;
     margin-top:70px;
+    font-family: "Bungee";
+    color: white;
 }
 
 @media (max-width:1200px) {
@@ -789,7 +791,7 @@ body{
 
 
 
-.world__Textos__1{
+.world__Textos__1 p{
     font-family: "Bungee";
     color: white;
     width: 100%;
@@ -798,31 +800,31 @@ body{
 }
 
 @media (max-width:1200px) {
-    .world__Textos__1{
+    .world__Textos__1 p{
         font-size: 11.4px;
     }
 }
 
 @media (max-width:1024px) {
-    .world__Textos__1{
+    .world__Textos__1 p{
         font-size: 10.26px;
     }
 }
 
 @media (max-width:950px) {
-    .world__Textos__1{
+    .world__Textos__1 p{
         font-size: 9.747px;
     }
 }
 
 @media (max-width:768px) {
-    .world__Textos__1{
+    .world__Textos__1 p{
         font-size: 7.6px;
     }
 }
 
 @media (max-width:480px) {
-    .world__Textos__1{
+    .world__Textos__1 p{
         width:80%;
         margin-left: 50px;
     }
@@ -833,6 +835,8 @@ body{
     display:flex;
     justify-content: center;
     margin-top:70px;
+    font-family: "Bungee";
+    color: white;
 }
 
 @media (max-width:1200px) {
@@ -860,7 +864,7 @@ body{
 }
 
 
-.world__Textos__2{
+.world__Textos__2 p{
     font-family: "Bungee";
     color: white;
     width: 100%;
@@ -869,31 +873,31 @@ body{
 }
 
 @media (max-width:1200px) {
-    .world__Textos__2{
+    .world__Textos__2 p{
         font-size: 11.4px;
     }
 }
 
 @media (max-width:1024px) {
-    .world__Textos__2{
+    .world__Textos__2 p{
         font-size: 10.26px;
     }
 }
 
 @media (max-width:950px) {
-    .world__Textos__2{
+    .world__Textos__2 p{
         font-size: 9.75px;
     }
 }
 
 @media (max-width:768px) {
-    .world__Textos__2{
+    .world__Textos__2 p{
         font-size: 7.61px;
     }
 }
 
 @media (max-width:480px) {
-    .world__Textos__2{
+    .world__Textos__2 p{
         width:80%;
         margin-left: 50px;
     }
@@ -904,6 +908,8 @@ body{
     display:flex;
     justify-content: center;
     margin-top:70px;
+    font-family: "Bungee";
+    color: white;
 }
 
 @media (max-width:1200px) {
@@ -930,7 +936,7 @@ body{
     }
 }
 
-.world__Textos__3{
+.world__Textos__3 p{
     font-family: "Bungee";
     color: white;
     width: 100%;
@@ -939,31 +945,31 @@ body{
 }
 
 @media (max-width:1200px) {
-    .world__Textos__3{
+    .world__Textos__3 p{
         font-size: 11.4px;
     }
 }
 
 @media (max-width:1024px) {
-    .world__Textos__3{
+    .world__Textos__3 p{
         font-size: 10.26px;
     }
 }
 
 @media (max-width:950px) {
-    .world__Textos__3{
+    .world__Textos__3 p{
         font-size: 9.75px;
     }
 }
 
 @media (max-width:768px) {
-    .world__Textos__3{
+    .world__Textos__3 p{
         font-size: 7.61px;
     }
 }
 
 @media (max-width:480px) {
-    .world__Textos__3{
+    .world__Textos__3 p{
         width:80%;
         margin-left: 50px;
     }
@@ -1560,6 +1566,7 @@ body{
 @media (max-width:479px) {
     #Nombre{
         width:80%;
+        margin-left: -50px;
     }
     
 }
@@ -1623,6 +1630,7 @@ body{
 @media (max-width:479px) {
     #Mail{
         width:80%;
+        margin-left: -50px;
     }
     
 }
@@ -1666,6 +1674,7 @@ body{
 @media (max-width:479px) {
     #Telefono{
         width:80%;
+        margin-left: -50px;
     }
     
 }
@@ -1709,6 +1718,7 @@ body{
 @media (max-width:479px) {
     #Empresa{
         width:80%;
+        margin-left: -50px;
     }
     
 }
@@ -1752,6 +1762,7 @@ body{
 @media (max-width:479px) {
     #Asunto{
         width:80%;
+        margin-left: -50px;
     }
     
 }
@@ -1795,7 +1806,7 @@ body{
 @media (max-width:479px) {
     #Mensaje{
         width:80%;
-        margin-left: 25px;
+        margin-left: -10px;
     }
     
 }
