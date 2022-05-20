@@ -91,3 +91,19 @@
     display:flex;
     justify-content: space-around;
 }
+
+/*GALERIA*/
+
+.gallery__titulo__container h1{
+    font-family: "Bungee";
+    display:flex;
+    justify-content: space-evenly;
+}
+
+
+/*CONTACTO*/
+
+.contact__title__container { 
+    grid-area: contact__title__container; 
+    font-size: 20px;
+}

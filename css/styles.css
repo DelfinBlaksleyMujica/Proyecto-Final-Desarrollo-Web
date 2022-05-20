@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background-image: url(../img/estrellas_Blanco.png);
+  background-color: black;
   margin: 0;
 }
 
@@ -109,6 +109,28 @@ body {
   grid-area: indoors__CapitulosyDescripciones__Container;
 }
 
+/*GALERIA*/
+.gallery-container {
+  display: grid;
+  grid-template-columns: 0.6fr 3fr 0.6fr;
+  grid-template-rows: 0.5fr 0.5fr 5fr 1fr 0.1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo gallery__titulo__container margin__derecho" "margin__izquierdo gallery__main__container margin__derecho" "margin__izquierdo gallery__text__container margin__derecho" "margin__izquierdo footer margin__derecho";
+}
+
+/*CONTACTO*/
+.contact-container {
+  display: grid;
+  grid-template-columns: 0.6fr 3fr 0.6fr;
+  grid-template-rows: 0.5fr 0.5fr 5fr 0.1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo contact__title__container margin__derecho" "margin__izquierdo contact__main__container margin__derecho" "margin__izquierdo footer margin__derecho";
+}
+
 /*INDEX*/
 .index__Video__Container {
   grid-area: index__Video__Container;
@@ -143,6 +165,14 @@ body {
   border-radius: 20px;
 }
 
+.index__manteneteActivado__canales ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+  align-items: center;
+}
+
 /*WORLD*/
 .World__Titulo__Container {
   grid-area: World__Titulo__Container;
@@ -174,6 +204,91 @@ body {
   grid-area: indoors__temporada1__episodio1;
   display: flex;
   justify-content: space-around;
+}
+
+/*GALERIA*/
+.gallery__titulo__container {
+  grid-area: gallery__titulo__container;
+  color: black;
+  -webkit-text-stroke: 1px white;
+  font-size: 20px;
+}
+
+.gallery__main__container {
+  grid-area: gallery__main__container;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: center;
+}
+.gallery__main__container img {
+  margin: 10px 10px;
+}
+
+.gallery__text__container {
+  grid-area: gallery__text__container;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*CONTACTO*/
+.contact__title {
+  display: flex;
+  color: black;
+  -webkit-text-stroke: 1px white;
+  font-family: "Bungee";
+  justify-content: space-evenly;
+}
+
+.contact__main__container {
+  grid-area: contact__main__container;
+}
+
+.contact__main__NuestroContacto {
+  display: flex;
+  color: white;
+  font-family: "Bungee";
+  list-style-type: none;
+  justify-content: space-evenly;
+  align-items: baseline;
+  font-size: 13px;
+  margin-left: -45px;
+}
+.contact__main__NuestroContacto li a {
+  text-decoration: none;
+  color: white;
+}
+
+.seccionContactos__Nombre {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.seccionContactos__Mail {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.seccionContactos__Telefono {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.seccionContactos__Empresa {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.seccionContactos__Asunto {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.seccionContactos__Mensaje {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /*INDEX*/
@@ -265,6 +380,19 @@ body {
   justify-content: space-around;
 }
 
+/*GALERIA*/
+.gallery__titulo__container h1 {
+  font-family: "Bungee";
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/*CONTACTO*/
+.contact__title__container {
+  grid-area: contact__title__container;
+  font-size: 20px;
+}
+
 /*INDEX*/
 .suscripciones__parrafo {
   color: white;
@@ -311,6 +439,13 @@ body {
   justify-content: space-around;
 }
 
+/*GALERIA*/
+.gallery__text__container p {
+  font-family: "Bungee";
+  font-size: 12px;
+  width: 80%;
+}
+
 /*INDEX*/
 .index__Suscripciones__Container form {
   margin-top: 50px;
@@ -327,6 +462,44 @@ body {
   font-family: "Bungee";
   font-size: 10px;
   margin-right: 50px;
+}
+
+/*CONTACTO*/
+#Nombre {
+  width: 100%;
+  font-family: "Bungee";
+  margin-top: 50px;
+}
+
+#Mail {
+  width: 100%;
+  font-family: "Bungee";
+  margin-top: 20px;
+}
+
+#Telefono {
+  width: 100%;
+  font-family: "Bungee";
+  margin-top: 20px;
+}
+
+#Empresa {
+  width: 100%;
+  font-family: "Bungee";
+  margin-top: 20px;
+}
+
+#Asunto {
+  width: 100%;
+  font-family: "Bungee";
+  margin-top: 20px;
+}
+
+#Mensaje {
+  width: 100%;
+  height: 200px;
+  font-family: "Bungee";
+  margin-top: 20px;
 }
 
 /*INDEX*/
@@ -370,19 +543,63 @@ body {
   height: 30px;
 }
 
-/*INDEX*/
-/*INDEX*/
-@media (max-width: 320px) {
-  .index-container {
-    display: grid;
-    grid-template-columns: 0.6fr 3fr 0.6fr;
-    grid-template-rows: 0.5fr 0.5fr 3fr 2.5fr 1.5fr 0.1fr;
-    grid-auto-columns: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo index__Titulo__Container margin__derecho" "margin__izquierdo index__VideoyTexto__Container margin__derecho" "margin__izquierdo index__Suscripciones__Container margin__derecho" "margin__izquierdo index__ManteneteActivado__Container margin__derecho" "margin__izquierdo footer margin__derecho";
-  }
+/*CONTACTO*/
+#BotonEnviarContactos {
+  font-family: "Bungee";
+  background-color: black;
+  color: white;
+  border: solid 2px white;
+  width: 150px;
+  height: 50px;
+  margin-top: 150px;
+  margin-left: 610px;
 }
+
+/*ANIMACIONES-TRANSFORMACIONES-TRANSICIONES*/
+/*GENERALES*/
+.logoMenuDeNavegacion:hover {
+  transform: scale(1.05);
+  transition: 1s;
+}
+
+.navBar .menuDeNavegacion li .subrayado:hover {
+  border-bottom: solid 2px white;
+}
+
+/*INDEX*/
+.suscripciones__button:hover {
+  color: black;
+  background-color: white;
+  border: solid 2px black;
+}
+
+#BotonEnviarIndex:hover {
+  color: black;
+  background-color: white;
+  border: solid 2px black;
+}
+
+/*INDOORS*/
+#episodios__selectTemporada:hover {
+  color: black;
+  background-color: white;
+  border: solid 2px black;
+}
+
+/*GALERIA*/
+.gallery__main__container img:hover {
+  transform: scale(1.5);
+  transition: 1s;
+}
+
+/*CONTACTO*/
+#BotonEnviarContactos:hover {
+  color: black;
+  background-color: white;
+  border: solid 2px black;
+}
+
+/*GENERALES*/
 @media (max-width: 1200px) {
   .navBar .menuDeNavegacion li a {
     font-size: 1.7rem;
@@ -447,6 +664,7 @@ body {
   .logoMenuDeNavegacion a img {
     height: 65%;
     width: 65%;
+    margin-left: 8px;
   }
 }
 @media (max-width: 768px) {
@@ -454,26 +672,42 @@ body {
     width: 100px;
   }
 }
+@media (max-width: 320px) {
+  .logoMenuDeNavegacion {
+    width: 60px;
+  }
+}
+@media (max-width: 1200px) {
+  .footer p {
+    font-size: 9px;
+  }
+}
+@media (max-width: 1024px) {
+  .footer p {
+    font-size: 8px;
+  }
+}
+@media (max-width: 950px) {
+  .footer p {
+    font-size: 7.6px;
+  }
+}
 @media (max-width: 768px) {
-  .logoSpotify {
-    margin-left: -80px;
+  .footer p {
+    font-size: 5.93px;
+    text-align: center;
   }
 }
-@media (max-width: 600px) {
-  .logoSpotify {
-    margin-left: -60px;
-  }
-}
-@media (max-width: 800px) {
-  .logoSpotify img {
-    height: 50px;
-    width: 50px;
-  }
-}
-@media (max-width: 800px) {
-  .logoInstagram img {
-    height: 50px;
-    width: 50px;
+/*INDEX*/
+@media (max-width: 320px) {
+  .index-container {
+    display: grid;
+    grid-template-columns: 0.6fr 3fr 0.6fr;
+    grid-template-rows: 0.5fr 0.5fr 3fr 2.5fr 1.5fr 0.1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo index__Titulo__Container margin__derecho" "margin__izquierdo index__VideoyTexto__Container margin__derecho" "margin__izquierdo index__Suscripciones__Container margin__derecho" "margin__izquierdo index__ManteneteActivado__Container margin__derecho" "margin__izquierdo footer margin__derecho";
   }
 }
 @media (max-width: 1200px) {
@@ -528,6 +762,11 @@ body {
   .index__Texto__Container {
     font-size: 6.49px;
     margin-left: 46px;
+  }
+}
+@media (max-width: 320px) {
+  .index__Texto__Container {
+    margin-left: 37px;
   }
 }
 @media (max-width: 1200px) {
@@ -638,25 +877,31 @@ body {
     font-size: 19px;
   }
 }
-@media (max-width: 1200px) {
-  .footer p {
-    font-size: 9px;
-  }
-}
-@media (max-width: 1024px) {
-  .footer p {
-    font-size: 8px;
-  }
-}
-@media (max-width: 950px) {
-  .footer p {
-    font-size: 7.6px;
+@media (max-width: 320px) {
+  .index__manteneteActivado__canales ul {
+    margin-left: -12px;
   }
 }
 @media (max-width: 768px) {
-  .footer p {
-    font-size: 5.93px;
-    text-align: center;
+  .logoSpotify {
+    margin-left: -80px;
+  }
+}
+@media (max-width: 600px) {
+  .logoSpotify {
+    margin-left: -60px;
+  }
+}
+@media (max-width: 800px) {
+  .logoSpotify img {
+    height: 50px;
+    width: 50px;
+  }
+}
+@media (max-width: 800px) {
+  .logoInstagram img {
+    height: 50px;
+    width: 50px;
   }
 }
 /*WORLD*/
@@ -966,52 +1211,7 @@ body {
     margin-bottom: 50px;
   }
 }
-/*INDEX*/
-.index__manteneteActivado__canales ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  list-style-type: none;
-  align-items: center;
-}
-
-/*INDOORS*/
-@media (max-width: 1200px) {
-  .indoors__temporada1__descripcion1 p {
-    font-size: 11.4px;
-  }
-}
-@media (max-width: 1024px) {
-  .indoors__temporada1__descripcion1 p {
-    font-size: 10.26px;
-  }
-}
-@media (max-width: 950px) {
-  .indoors__temporada1__descripcion1 p {
-    font-size: 9.75px;
-  }
-}
-@media (max-width: 768px) {
-  .indoors__temporada1__descripcion1 p {
-    font-size: 7.61px;
-  }
-}
-@media (max-width: 600px) {
-  .indoors__temporada1__descripcion1 p {
-    margin-bottom: 50px;
-  }
-}
 /*GALERIA*/
-.gallery-container {
-  display: grid;
-  grid-template-columns: 0.6fr 3fr 0.6fr;
-  grid-template-rows: 0.5fr 0.5fr 5fr 1fr 0.1fr;
-  grid-auto-columns: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo gallery__titulo__container margin__derecho" "margin__izquierdo gallery__main__container margin__derecho" "margin__izquierdo gallery__text__container margin__derecho" "margin__izquierdo footer margin__derecho";
-}
-
 @media (max-width: 1791px) {
   .gallery-container {
     display: grid;
@@ -1067,13 +1267,6 @@ body {
     grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo gallery__titulo__container margin__derecho" "margin__izquierdo gallery__main__container margin__derecho" "margin__izquierdo gallery__text__container margin__derecho" "margin__izquierdo footer margin__derecho";
   }
 }
-.gallery__titulo__container {
-  grid-area: gallery__titulo__container;
-  color: black;
-  -webkit-text-stroke: 1px white;
-  font-size: 20px;
-}
-
 @media (max-width: 1200px) {
   .gallery__titulo__container {
     font-size: 19px;
@@ -1094,37 +1287,6 @@ body {
     font-size: 12.6px;
   }
 }
-.gallery__titulo__container h1 {
-  font-family: "Bungee";
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.gallery__main__container {
-  grid-area: gallery__main__container;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: stretch;
-  justify-content: center;
-}
-.gallery__main__container img {
-  margin: 10px 10px;
-}
-
-.gallery__text__container {
-  grid-area: gallery__text__container;
-  color: white;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.gallery__text__container p {
-  font-family: "Bungee";
-  font-size: 12px;
-  width: 80%;
-}
-
 @media (max-width: 1200px) {
   .gallery__text__container p {
     font-size: 11.4px;
@@ -1146,16 +1308,6 @@ body {
   }
 }
 /*CONTACTO*/
-.contact-container {
-  display: grid;
-  grid-template-columns: 0.6fr 3fr 0.6fr;
-  grid-template-rows: 0.5fr 0.5fr 5fr 0.1fr;
-  grid-auto-columns: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo contact__title__container margin__derecho" "margin__izquierdo contact__main__container margin__derecho" "margin__izquierdo footer margin__derecho";
-}
-
 @media (max-width: 768px) {
   .contact-container {
     display: grid;
@@ -1178,11 +1330,6 @@ body {
     grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo contact__title__container margin__derecho" "margin__izquierdo contact__main__container margin__derecho" "margin__izquierdo footer margin__derecho";
   }
 }
-.contact__title__container {
-  grid-area: contact__title__container;
-  font-size: 20px;
-}
-
 @media (max-width: 1200px) {
   .contact__title__container {
     font-size: 19px;
@@ -1203,33 +1350,6 @@ body {
     font-size: 12.6px;
   }
 }
-.contact__title {
-  display: flex;
-  color: black;
-  -webkit-text-stroke: 1px white;
-  font-family: "Bungee";
-  justify-content: space-evenly;
-}
-
-.contact__main__container {
-  grid-area: contact__main__container;
-}
-
-.contact__main__NuestroContacto {
-  display: flex;
-  color: white;
-  font-family: "Bungee";
-  list-style-type: none;
-  justify-content: space-evenly;
-  align-items: baseline;
-  font-size: 13px;
-  margin-left: -45px;
-}
-.contact__main__NuestroContacto li a {
-  text-decoration: none;
-  color: white;
-}
-
 @media (max-width: 1200px) {
   .contact__main__NuestroContacto {
     font-size: 12.4px;
@@ -1250,17 +1370,6 @@ body {
     font-size: 8.27px;
   }
 }
-.seccionContactos__Nombre {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-#Nombre {
-  width: 100%;
-  font-family: "Bungee";
-  margin-top: 50px;
-}
-
 @media (max-width: 479px) {
   #Nombre {
     width: 80%;
@@ -1282,17 +1391,11 @@ body {
     font-size: 9px;
   }
 }
-.seccionContactos__Mail {
-  display: flex;
-  justify-content: space-evenly;
+@media (max-width: 479px) {
+  #Nombre {
+    margin-left: -35px;
+  }
 }
-
-#Mail {
-  width: 100%;
-  font-family: "Bungee";
-  margin-top: 20px;
-}
-
 @media (max-width: 1024px) {
   #Mail {
     font-size: 12px;
@@ -1311,20 +1414,9 @@ body {
 @media (max-width: 479px) {
   #Mail {
     width: 80%;
-    margin-left: -50px;
+    margin-left: -35px;
   }
 }
-.seccionContactos__Telefono {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-#Telefono {
-  width: 100%;
-  font-family: "Bungee";
-  margin-top: 20px;
-}
-
 @media (max-width: 1024px) {
   #Telefono {
     font-size: 12px;
@@ -1343,20 +1435,9 @@ body {
 @media (max-width: 479px) {
   #Telefono {
     width: 80%;
-    margin-left: -50px;
+    margin-left: -35px;
   }
 }
-.seccionContactos__Empresa {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-#Empresa {
-  width: 100%;
-  font-family: "Bungee";
-  margin-top: 20px;
-}
-
 @media (max-width: 1024px) {
   #Empresa {
     font-size: 12px;
@@ -1375,20 +1456,9 @@ body {
 @media (max-width: 479px) {
   #Empresa {
     width: 80%;
-    margin-left: -50px;
+    margin-left: -35px;
   }
 }
-.seccionContactos__Asunto {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-#Asunto {
-  width: 100%;
-  font-family: "Bungee";
-  margin-top: 20px;
-}
-
 @media (max-width: 1024px) {
   #Asunto {
     font-size: 12px;
@@ -1407,21 +1477,9 @@ body {
 @media (max-width: 479px) {
   #Asunto {
     width: 80%;
-    margin-left: -50px;
+    margin-left: -35px;
   }
 }
-.seccionContactos__Mensaje {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-#Mensaje {
-  width: 100%;
-  height: 200px;
-  font-family: "Bungee";
-  margin-top: 20px;
-}
-
 @media (max-width: 1024px) {
   #Mensaje {
     font-size: 12px;
@@ -1440,20 +1498,9 @@ body {
 @media (max-width: 479px) {
   #Mensaje {
     width: 80%;
-    margin-left: -10px;
+    margin-left: -3px;
   }
 }
-#BotonEnviarContactos {
-  font-family: "Bungee";
-  background-color: black;
-  color: white;
-  border: solid 2px white;
-  width: 150px;
-  height: 50px;
-  margin-top: 150px;
-  margin-left: 610px;
-}
-
 @media (max-width: 1750px) {
   #BotonEnviarContactos {
     margin-left: 550px;
@@ -1561,43 +1608,14 @@ body {
     margin-left: 160px;
   }
 }
-/*ANIMACIONES-TRANSFORMACIONES-TRANSICIONES*/
-.logoMenuDeNavegacion:hover {
-  transform: scale(1.05);
-  transition: 1s;
+@media (max-width: 320px) {
+  #BotonEnviarContactos {
+    margin-left: 140px;
+  }
 }
-
-.navBar .menuDeNavegacion li .subrayado:hover {
-  border-bottom: solid 2px white;
-}
-
-.suscripciones__button:hover {
-  color: black;
-  background-color: white;
-  border: solid 2px black;
-}
-
-#BotonEnviarIndex:hover {
-  color: black;
-  background-color: white;
-  border: solid 2px black;
-}
-
-#BotonEnviarContactos:hover {
-  color: black;
-  background-color: white;
-  border: solid 2px black;
-}
-
-#episodios__selectTemporada:hover {
-  color: black;
-  background-color: white;
-  border: solid 2px black;
-}
-
-.gallery__main__container img:hover {
-  transform: scale(1.5);
-  transition: 1s;
-}
+/*INDEX*/
+/*INDOORS*/
+/*GALERIA*/
+/*CONTACTO*/
 
 /*# sourceMappingURL=styles.css.map */
