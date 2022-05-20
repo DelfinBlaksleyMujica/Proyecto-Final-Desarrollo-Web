@@ -1,5 +1,11 @@
 /*GENERALES*/
 
+
+@media (max-width:320px){
+    .navBar{margin-left:-10px;
+}
+}
+
 @media (max-width:1200px) {
     .navBar .menuDeNavegacion li a{
         font-size: 1.7rem;
@@ -81,7 +87,7 @@
     .logoMenuDeNavegacion a img{
     height:65%;
     width: 65%;
-    margin-left:8px;
+    margin-left:7px;
 }
 }
 
@@ -312,6 +318,13 @@
 @media (max-width:768px) {
     .suscripciones__email{
         font-size: 6.22px;
+    }
+    
+}
+
+@media (max-width:320px) {
+    .suscripciones__email{
+        width:150px;
     }
     
 }
@@ -1373,6 +1386,6 @@
 
 @media (max-width:320px) {
     #BotonEnviarContactos{
-        margin-left:140px;
+        margin-left:135px;
     }
 }
