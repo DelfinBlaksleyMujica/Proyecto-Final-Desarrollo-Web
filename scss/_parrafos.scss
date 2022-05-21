@@ -1,17 +1,22 @@
+
+
+
+
+
+
 /*INDEX*/
 
-.suscripciones__parrafo{
-    color: white;
+
+.index__Texto__Container p{
+    font-family: "Russo One";
     font-size: 12px;
-    font-family: "Bungee";
-    text-align: center;
 }
 
 /*WORLD*/
 
 
 .world__Textos__1 p{
-    font-family: "Bungee";
+    font-family: "Russo One";
     color: white;
     width: 100%;
     border-radius: 20px;
@@ -19,7 +24,7 @@
 }
 
 .world__Textos__2 p{
-    font-family: "Bungee";
+    font-family: "Russo One";
     color: white;
     width: 100%;
     border-radius: 20px;
@@ -27,31 +32,46 @@
 }
 
 .world__Textos__3 p{
-    font-family: "Bungee";
+    font-family: "Russo One";
     color: white;
     width: 100%;
     border-radius: 20px;
     font-size: 12px;
 }
 
+/*MERCHANDISE*/
+
+
+
 /*INDOORS*/
 
-.indoors__temporada1__descripcion1 { 
-    grid-area: indoors__temporada1__descripcion1;
-    color:white;
+.indoors__temporada1__descripcion1 h3{ 
     font-family: "Bungee";
+    color: white;
 }
 
 .indoors__temporada1__descripcion1 p{
     font-size: 12px;
     display:flex;
     justify-content: space-around;
+    font-family: "Russo One";
+    color: white;
+    
 }
 
 /*GALERIA*/
 
 .gallery__text__container p{
-    font-family: "Bungee";
+    font-family: "Russo One";
     font-size: 12px;
     width:80%;
+    color: white;
+}
+
+/*CONTACTO*/
+
+.contact__main__NuestroContacto{
+    color:white;
+    font-family: "Russo One";
+    font-size:13px;
 }

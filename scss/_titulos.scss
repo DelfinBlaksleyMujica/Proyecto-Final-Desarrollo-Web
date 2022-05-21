@@ -1,41 +1,36 @@
 /*INDEX*/
 
+.index__Titulo__Container h1{
+    font-size: 40px;
+    color: black;
+    -webkit-text-stroke:1px white;
+    font-family: "Bungee";
+}
+
 .suscripciones__titulo{
     color: white;
     font-size: 30px;
-    font-weight: bolder;
     font-family: "Bungee";
-    display:flex;
-    justify-content:space-evenly;
-    text-align: center;
 }
 
 .canales__titulo{
     color: white;
     font-size: 30px;
-    font-weight: bolder;
     font-family: "Bungee";
     margin-top: 0;
-    display:flex;
-    justify-content: space-evenly;
 }
 
 /*WORLD*/
 
 .World__Titulo__Container h1{
-    display:flex;
-    justify-content: space-around;
     font-family: "Bungee";
-    font-weight: bolder;
     color: black;
     -webkit-text-stroke:1px white;
+    font-size: 40px;
 }
 
 .world__activa__titulo{
     font-size: 30px;
-    display:flex;
-    justify-content: center;
-    margin-top:70px;
     font-family: "Bungee";
     color: white;
 }
@@ -43,20 +38,23 @@
 
 .world__leyDeAtraccion__titulo{
     font-size: 30px;
-    display:flex;
-    justify-content: center;
-    margin-top:70px;
     font-family: "Bungee";
     color: white;
 }
 
 .world__vision__titulo{
     font-size: 30px;
-    display:flex;
-    justify-content: center;
-    margin-top:70px;
     font-family: "Bungee";
     color: white;
+}
+
+/*MERCHANDISE*/
+
+.merchandise__main__container p{
+    font-family: "Bungee";
+    font-size: 10rem;
+    color: black;
+    -webkit-text-stroke:3px white;
 }
 
 /*INDOORS*/
@@ -65,20 +63,10 @@
     font-size: 20px;
     h1{ 
         grid-area: indoors__Titulo__Container;
-        display:flex;
         color: black;
         -webkit-text-stroke:1px white;
         font-family: "Bungee";
-        justify-content: space-evenly;
     }
-}
-
-.indoors__Subtitulos__Container{
-    display:flex;
-    align-content: space-around;
-    align-items: center;
-    justify-content: space-evenly;
-
 }
 
 .episodios__titulo{
@@ -88,22 +76,25 @@
 
 .indoors__temporada1__descripcion1 h3{
     font-size: 30px;
-    display:flex;
-    justify-content: space-around;
 }
 
 /*GALERIA*/
 
 .gallery__titulo__container h1{
     font-family: "Bungee";
-    display:flex;
-    justify-content: space-evenly;
+    color: black;
+    -webkit-text-stroke:1px white;
+    font-size: 40px;
 }
 
 
 /*CONTACTO*/
 
-.contact__title__container { 
+.contact__title{ 
     grid-area: contact__title__container; 
-    font-size: 20px;
+    font-size: 40px;
+    color: black;
+    -webkit-text-stroke:1px white;
+    font-family: "Bungee";
 }
+

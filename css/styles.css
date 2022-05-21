@@ -43,6 +43,7 @@ body {
   background-color: rgb(63, 19, 104);
   display: flex;
   justify-content: space-around;
+  text-align: center;
 }
 
 .margin__izquierdo {
@@ -62,20 +63,6 @@ body {
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo index__Titulo__Container margin__derecho" "margin__izquierdo index__VideoyTexto__Container margin__derecho" "margin__izquierdo index__Suscripciones__Container margin__derecho" "margin__izquierdo index__ManteneteActivado__Container margin__derecho" "margin__izquierdo footer margin__derecho";
-}
-
-.index__Titulo__Container {
-  grid-area: index__Titulo__Container;
-  text-shadow: 2rem;
-  font-size: 20px;
-  font-family: "Bungee";
-  font-weight: bolder;
-  color: black;
-  -webkit-text-stroke: 1px white;
-}
-.index__Titulo__Container h1 {
-  display: flex;
-  justify-content: space-evenly;
 }
 
 .index__VideoyTexto__Container {
@@ -98,7 +85,28 @@ body {
   grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo World__Titulo__Container margin__derecho" "margin__izquierdo World__AboutUs__Container margin__derecho" "margin__izquierdo footer margin__derecho";
 }
 
+/*MERCHANDISE*/
+.merchandise-Container {
+  display: grid;
+  grid-template-columns: 0.6fr 3fr 0.6fr;
+  grid-template-rows: 0.5fr 4fr 0.1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo merchandise__main__container margin__derecho" "margin__izquierdo footer margin__derecho";
+}
+
 /*INDOORS*/
+.indoors-container {
+  display: grid;
+  grid-template-columns: 0.6fr 3fr 0.6fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 5.5fr 0.1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo indoors__Titulo__Container margin__derecho" "margin__izquierdo indoors__Subtitulos__Container margin__derecho" "margin__izquierdo indoors__CapitulosyDescripciones__Container margin__derecho" "margin__izquierdo footer margin__derecho";
+}
+
 .indoors__CapitulosyDescripciones__Container {
   display: grid;
   grid-template-columns: 0.6fr 3fr 0.6fr;
@@ -132,6 +140,14 @@ body {
 }
 
 /*INDEX*/
+.index__Titulo__Container {
+  grid-area: index__Titulo__Container;
+}
+.index__Titulo__Container h1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .index__Video__Container {
   grid-area: index__Video__Container;
   display: flex;
@@ -146,12 +162,10 @@ body {
 .index__Texto__Container {
   grid-area: index__Texto__Container;
   background-color: white;
-  font-family: "Bungee";
   width: 80%;
   border-radius: 20px;
   margin-top: 50px;
   margin-left: 150px;
-  font-size: 12px;
   text-align: center;
 }
 
@@ -159,10 +173,19 @@ body {
   grid-area: index__Suscripciones__Container;
 }
 
+.suscripciones__titulo {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
 .index__ManteneteActivado__Container {
   grid-area: index__ManteneteActivado__Container;
-  background-image: url();
-  border-radius: 20px;
+}
+
+.canales__titulo {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .index__manteneteActivado__canales ul {
@@ -176,7 +199,11 @@ body {
 /*WORLD*/
 .World__Titulo__Container {
   grid-area: World__Titulo__Container;
-  font-size: 20px;
+}
+
+.World__Titulo__Container h1 {
+  display: flex;
+  justify-content: space-around;
 }
 
 .World__Titulo__SubContainer {
@@ -189,15 +216,47 @@ body {
   grid-area: World__AboutUs__Container;
 }
 
+.world__activa__titulo {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.world__leyDeAtraccion__titulo {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.world__vision__titulo {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+/*MERCHANDISE*/
+.merchandise__main__container {
+  grid-area: merchandise__main__container;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url(../img/BTTF-Retro-1.gif);
+  background-size: cover;
+  background-position: center;
+}
+
 /*INDOORS*/
-.indoors-container {
-  display: grid;
-  grid-template-columns: 0.6fr 3fr 0.6fr;
-  grid-template-rows: 0.5fr 0.5fr 0.5fr 5.5fr 0.1fr;
-  grid-auto-columns: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo indoors__Titulo__Container margin__derecho" "margin__izquierdo indoors__Subtitulos__Container margin__derecho" "margin__izquierdo indoors__CapitulosyDescripciones__Container margin__derecho" "margin__izquierdo footer margin__derecho";
+.indoors__Titulo__Container h1 {
+  grid-area: indoors__Titulo__Container;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.indoors__Subtitulos__Container {
+  display: flex;
+  align-content: space-around;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .indoors__temporada1__episodio1 {
@@ -206,12 +265,19 @@ body {
   justify-content: space-around;
 }
 
+.indoors__temporada1__descripcion1 {
+  grid-area: indoors__temporada1__descripcion1;
+}
+.indoors__temporada1__descripcion1 h3 {
+  display: flex;
+  justify-content: space-around;
+}
+
 /*GALERIA*/
-.gallery__titulo__container {
+.gallery__titulo__container h1 {
   grid-area: gallery__titulo__container;
-  color: black;
-  -webkit-text-stroke: 1px white;
-  font-size: 20px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .gallery__main__container {
@@ -221,13 +287,9 @@ body {
   align-content: stretch;
   justify-content: center;
 }
-.gallery__main__container img {
-  margin: 10px 10px;
-}
 
 .gallery__text__container {
   grid-area: gallery__text__container;
-  color: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -236,9 +298,6 @@ body {
 /*CONTACTO*/
 .contact__title {
   display: flex;
-  color: black;
-  -webkit-text-stroke: 1px white;
-  font-family: "Bungee";
   justify-content: space-evenly;
 }
 
@@ -248,12 +307,9 @@ body {
 
 .contact__main__NuestroContacto {
   display: flex;
-  color: white;
-  font-family: "Bungee";
   list-style-type: none;
   justify-content: space-evenly;
   align-items: baseline;
-  font-size: 13px;
   margin-left: -45px;
 }
 .contact__main__NuestroContacto li a {
@@ -292,61 +348,58 @@ body {
 }
 
 /*INDEX*/
+.index__Titulo__Container h1 {
+  font-size: 40px;
+  color: black;
+  -webkit-text-stroke: 1px white;
+  font-family: "Bungee";
+}
+
 .suscripciones__titulo {
   color: white;
   font-size: 30px;
-  font-weight: bolder;
   font-family: "Bungee";
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
 }
 
 .canales__titulo {
   color: white;
   font-size: 30px;
-  font-weight: bolder;
   font-family: "Bungee";
   margin-top: 0;
-  display: flex;
-  justify-content: space-evenly;
 }
 
 /*WORLD*/
 .World__Titulo__Container h1 {
-  display: flex;
-  justify-content: space-around;
   font-family: "Bungee";
-  font-weight: bolder;
   color: black;
   -webkit-text-stroke: 1px white;
+  font-size: 40px;
 }
 
 .world__activa__titulo {
   font-size: 30px;
-  display: flex;
-  justify-content: center;
-  margin-top: 70px;
   font-family: "Bungee";
   color: white;
 }
 
 .world__leyDeAtraccion__titulo {
   font-size: 30px;
-  display: flex;
-  justify-content: center;
-  margin-top: 70px;
   font-family: "Bungee";
   color: white;
 }
 
 .world__vision__titulo {
   font-size: 30px;
-  display: flex;
-  justify-content: center;
-  margin-top: 70px;
   font-family: "Bungee";
   color: white;
+}
+
+/*MERCHANDISE*/
+.merchandise__main__container p {
+  font-family: "Bungee";
+  font-size: 10rem;
+  color: black;
+  -webkit-text-stroke: 3px white;
 }
 
 /*INDOORS*/
@@ -355,18 +408,9 @@ body {
 }
 .indoors__Titulo__Container h1 {
   grid-area: indoors__Titulo__Container;
-  display: flex;
   color: black;
   -webkit-text-stroke: 1px white;
   font-family: "Bungee";
-  justify-content: space-evenly;
-}
-
-.indoors__Subtitulos__Container {
-  display: flex;
-  align-content: space-around;
-  align-items: center;
-  justify-content: space-evenly;
 }
 
 .episodios__titulo {
@@ -376,34 +420,34 @@ body {
 
 .indoors__temporada1__descripcion1 h3 {
   font-size: 30px;
-  display: flex;
-  justify-content: space-around;
 }
 
 /*GALERIA*/
 .gallery__titulo__container h1 {
   font-family: "Bungee";
-  display: flex;
-  justify-content: space-evenly;
+  color: black;
+  -webkit-text-stroke: 1px white;
+  font-size: 40px;
 }
 
 /*CONTACTO*/
-.contact__title__container {
+.contact__title {
   grid-area: contact__title__container;
-  font-size: 20px;
+  font-size: 40px;
+  color: black;
+  -webkit-text-stroke: 1px white;
+  font-family: "Bungee";
 }
 
 /*INDEX*/
-.suscripciones__parrafo {
-  color: white;
+.index__Texto__Container p {
+  font-family: "Russo One";
   font-size: 12px;
-  font-family: "Bungee";
-  text-align: center;
 }
 
 /*WORLD*/
 .world__Textos__1 p {
-  font-family: "Bungee";
+  font-family: "Russo One";
   color: white;
   width: 100%;
   border-radius: 20px;
@@ -411,7 +455,7 @@ body {
 }
 
 .world__Textos__2 p {
-  font-family: "Bungee";
+  font-family: "Russo One";
   color: white;
   width: 100%;
   border-radius: 20px;
@@ -419,31 +463,41 @@ body {
 }
 
 .world__Textos__3 p {
-  font-family: "Bungee";
+  font-family: "Russo One";
   color: white;
   width: 100%;
   border-radius: 20px;
   font-size: 12px;
 }
 
+/*MERCHANDISE*/
 /*INDOORS*/
-.indoors__temporada1__descripcion1 {
-  grid-area: indoors__temporada1__descripcion1;
-  color: white;
+.indoors__temporada1__descripcion1 h3 {
   font-family: "Bungee";
+  color: white;
 }
 
 .indoors__temporada1__descripcion1 p {
   font-size: 12px;
   display: flex;
   justify-content: space-around;
+  font-family: "Russo One";
+  color: white;
 }
 
 /*GALERIA*/
 .gallery__text__container p {
-  font-family: "Bungee";
+  font-family: "Russo One";
   font-size: 12px;
   width: 80%;
+  color: white;
+}
+
+/*CONTACTO*/
+.contact__main__NuestroContacto {
+  color: white;
+  font-family: "Russo One";
+  font-size: 13px;
 }
 
 /*INDEX*/
@@ -459,7 +513,7 @@ body {
   width: 200px;
   height: 20px;
   background: linear-gradient(to left, silver, white);
-  font-family: "Bungee";
+  font-family: "Russo One";
   font-size: 10px;
   margin-right: 50px;
 }
@@ -467,38 +521,38 @@ body {
 /*CONTACTO*/
 #Nombre {
   width: 100%;
-  font-family: "Bungee";
+  font-family: "Russo One";
   margin-top: 50px;
 }
 
 #Mail {
   width: 100%;
-  font-family: "Bungee";
+  font-family: "Russo One";
   margin-top: 20px;
 }
 
 #Telefono {
   width: 100%;
-  font-family: "Bungee";
+  font-family: "Russo One";
   margin-top: 20px;
 }
 
 #Empresa {
   width: 100%;
-  font-family: "Bungee";
+  font-family: "Russo One";
   margin-top: 20px;
 }
 
 #Asunto {
   width: 100%;
-  font-family: "Bungee";
+  font-family: "Russo One";
   margin-top: 20px;
 }
 
 #Mensaje {
   width: 100%;
   height: 200px;
-  font-family: "Bungee";
+  font-family: "Russo One";
   margin-top: 20px;
 }
 
@@ -521,6 +575,11 @@ body {
   width: 100px;
   height: 100px;
   border-radius: 50px;
+}
+
+/*GALERIA*/
+.gallery__main__container img {
+  margin: 10px 10px;
 }
 
 /*INDEX*/
@@ -646,6 +705,11 @@ body {
     margin-left: 5px;
   }
 }
+@media (max-width: 320px) {
+  .navBar .menuDeNavegacion li a {
+    font-size: 0.8rem;
+  }
+}
 @media (max-width: 1200px) {
   .logoMenuDeNavegacion a img {
     height: 95%;
@@ -700,19 +764,18 @@ body {
 @media (max-width: 768px) {
   .footer p {
     font-size: 5.93px;
-    text-align: center;
   }
 }
 /*INDEX*/
 @media (max-width: 320px) {
   .index-container {
     display: grid;
-    grid-template-columns: 0.6fr 3fr 0.6fr;
+    grid-template-columns: 3fr;
     grid-template-rows: 0.5fr 0.5fr 3fr 2.5fr 1.5fr 0.1fr;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo index__Titulo__Container margin__derecho" "margin__izquierdo index__VideoyTexto__Container margin__derecho" "margin__izquierdo index__Suscripciones__Container margin__derecho" "margin__izquierdo index__ManteneteActivado__Container margin__derecho" "margin__izquierdo footer margin__derecho";
+    grid-template-areas: "navBar" "index__Titulo__Container" "index__VideoyTexto__Container" "index__Suscripciones__Container" "index__ManteneteActivado__Container" "footer";
   }
 }
 @media (max-width: 1200px) {
@@ -1117,6 +1180,135 @@ body {
   .world__Textos__3 p {
     width: 80%;
     margin-left: 50px;
+  }
+}
+/*MERCHANDISE*/
+@media (max-width: 950px) {
+  .merchandise-Container {
+    display: grid;
+    grid-template-columns: 0.6fr 3fr 0.6fr;
+    grid-template-rows: 0.5fr 4.5fr 0.1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo merchandise__main__container margin__derecho" "margin__izquierdo footer margin__derecho";
+  }
+}
+@media (max-width: 768px) {
+  .merchandise-Container {
+    display: grid;
+    grid-template-columns: 0.6fr 3fr 0.6fr;
+    grid-template-rows: 0.5fr 7fr 0.1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo merchandise__main__container margin__derecho" "margin__izquierdo footer margin__derecho";
+  }
+}
+@media (max-width: 383px) {
+  .merchandise-Container {
+    display: grid;
+    grid-template-columns: 0.6fr 3fr 0.6fr;
+    grid-template-rows: 0.5fr 7.5fr 0.1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo merchandise__main__container margin__derecho" "margin__izquierdo footer margin__derecho";
+  }
+}
+@media (max-width: 361px) {
+  .merchandise-Container {
+    display: grid;
+    grid-template-columns: 0.6fr 3fr 0.6fr;
+    grid-template-rows: 0.5fr 8fr 0.1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo merchandise__main__container margin__derecho" "margin__izquierdo footer margin__derecho";
+  }
+}
+@media (max-width: 343px) {
+  .merchandise-Container {
+    display: grid;
+    grid-template-columns: 0.6fr 3fr 0.6fr;
+    grid-template-rows: 0.5fr 8.3fr 0.1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo merchandise__main__container margin__derecho" "margin__izquierdo footer margin__derecho";
+  }
+}
+@media (max-width: 333px) {
+  .merchandise-Container {
+    display: grid;
+    grid-template-columns: 0.6fr 3fr 0.6fr;
+    grid-template-rows: 0.5fr 8.5fr 0.1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo merchandise__main__container margin__derecho" "margin__izquierdo footer margin__derecho";
+  }
+}
+@media (max-width: 325px) {
+  .merchandise-Container {
+    display: grid;
+    grid-template-columns: 0.6fr 3fr 0.6fr;
+    grid-template-rows: 0.5fr 8.8fr 0.1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo merchandise__main__container margin__derecho" "margin__izquierdo footer margin__derecho";
+  }
+}
+@media (max-width: 320px) {
+  .merchandise-Container {
+    display: grid;
+    grid-template-columns: 0.6fr 3fr 0.6fr;
+    grid-template-rows: 0.5fr 12fr 0.1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo merchandise__main__container margin__derecho" "margin__izquierdo footer margin__derecho";
+  }
+}
+@media (max-width: 1300px) {
+  .merchandise__main__container p {
+    font-size: 9rem;
+  }
+}
+@media (max-width: 1200px) {
+  .merchandise__main__container p {
+    font-size: 8rem;
+  }
+}
+@media (max-width: 1024px) {
+  .merchandise__main__container p {
+    font-size: 7rem;
+  }
+}
+@media (max-width: 950px) {
+  .merchandise__main__container p {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 768px) {
+  .merchandise__main__container p {
+    font-size: 5.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .merchandise__main__container p {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 480px) {
+  .merchandise__main__container p {
+    font-size: 4.5rem;
+  }
+}
+@media (max-width: 320px) {
+  .merchandise__main__container p {
+    font-size: 4rem;
   }
 }
 /*INDOORS*/
@@ -1625,176 +1817,6 @@ body {
 }
 /*INDEX*/
 /*MERCHANDISE*/
-.merchandise-Container {
-  display: grid;
-  grid-template-columns: 0.6fr 3fr 0.6fr;
-  grid-template-rows: 0.5fr 4fr 0.1fr;
-  grid-auto-columns: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo merchandise__main__container margin__derecho" "margin__izquierdo footer margin__derecho";
-}
-
-@media (max-width: 950px) {
-  .merchandise-Container {
-    display: grid;
-    grid-template-columns: 0.6fr 3fr 0.6fr;
-    grid-template-rows: 0.5fr 4.5fr 0.1fr;
-    grid-auto-columns: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo merchandise__main__container margin__derecho" "margin__izquierdo footer margin__derecho";
-  }
-}
-@media (max-width: 768px) {
-  .merchandise-Container {
-    display: grid;
-    grid-template-columns: 0.6fr 3fr 0.6fr;
-    grid-template-rows: 0.5fr 7fr 0.1fr;
-    grid-auto-columns: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo merchandise__main__container margin__derecho" "margin__izquierdo footer margin__derecho";
-  }
-}
-@media (max-width: 383px) {
-  .merchandise-Container {
-    display: grid;
-    grid-template-columns: 0.6fr 3fr 0.6fr;
-    grid-template-rows: 0.5fr 7.5fr 0.1fr;
-    grid-auto-columns: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo merchandise__main__container margin__derecho" "margin__izquierdo footer margin__derecho";
-  }
-}
-@media (max-width: 361px) {
-  .merchandise-Container {
-    display: grid;
-    grid-template-columns: 0.6fr 3fr 0.6fr;
-    grid-template-rows: 0.5fr 8fr 0.1fr;
-    grid-auto-columns: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo merchandise__main__container margin__derecho" "margin__izquierdo footer margin__derecho";
-  }
-}
-@media (max-width: 343px) {
-  .merchandise-Container {
-    display: grid;
-    grid-template-columns: 0.6fr 3fr 0.6fr;
-    grid-template-rows: 0.5fr 8.3fr 0.1fr;
-    grid-auto-columns: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo merchandise__main__container margin__derecho" "margin__izquierdo footer margin__derecho";
-  }
-}
-@media (max-width: 333px) {
-  .merchandise-Container {
-    display: grid;
-    grid-template-columns: 0.6fr 3fr 0.6fr;
-    grid-template-rows: 0.5fr 8.5fr 0.1fr;
-    grid-auto-columns: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo merchandise__main__container margin__derecho" "margin__izquierdo footer margin__derecho";
-  }
-}
-@media (max-width: 325px) {
-  .merchandise-Container {
-    display: grid;
-    grid-template-columns: 0.6fr 3fr 0.6fr;
-    grid-template-rows: 0.5fr 8.8fr 0.1fr;
-    grid-auto-columns: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo merchandise__main__container margin__derecho" "margin__izquierdo footer margin__derecho";
-  }
-}
-@media (max-width: 320px) {
-  .merchandise-Container {
-    display: grid;
-    grid-template-columns: 0.6fr 3fr 0.6fr;
-    grid-template-rows: 0.5fr 12fr 0.1fr;
-    grid-auto-columns: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "margin__izquierdo navBar margin__derecho" "margin__izquierdo merchandise__main__container margin__derecho" "margin__izquierdo footer margin__derecho";
-  }
-}
-.margin__izquierdo {
-  grid-area: margin__izquierdo;
-}
-
-.margin__derecho {
-  grid-area: margin__derecho;
-}
-
-.navBar {
-  grid-area: navBar;
-}
-
-.footer {
-  grid-area: footer;
-}
-
-.merchandise__main__container {
-  grid-area: merchandise__main__container;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  background-image: url(../img/BTTF-Retro-1.gif);
-  background-size: cover;
-  background-position: center;
-}
-.merchandise__main__container p {
-  font-family: "Bungee";
-  font-size: 10rem;
-  color: black;
-  -webkit-text-stroke: 3px white;
-}
-
-@media (max-width: 1300px) {
-  .merchandise__main__container p {
-    font-size: 9rem;
-  }
-}
-@media (max-width: 1200px) {
-  .merchandise__main__container p {
-    font-size: 8rem;
-  }
-}
-@media (max-width: 1024px) {
-  .merchandise__main__container p {
-    font-size: 7rem;
-  }
-}
-@media (max-width: 950px) {
-  .merchandise__main__container p {
-    font-size: 6rem;
-  }
-}
-@media (max-width: 768px) {
-  .merchandise__main__container p {
-    font-size: 5.5rem;
-  }
-}
-@media (max-width: 768px) {
-  .merchandise__main__container p {
-    font-size: 5rem;
-  }
-}
-@media (max-width: 480px) {
-  .merchandise__main__container p {
-    font-size: 4.5rem;
-  }
-}
-@media (max-width: 320px) {
-  .merchandise__main__container p {
-    font-size: 4rem;
-  }
-}
 /*INDOORS*/
 /*GALERIA*/
 /*CONTACTO*/
