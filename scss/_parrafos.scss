@@ -9,7 +9,7 @@
 
 .index__Texto__Container p{
     font-family: "Russo One";
-    font-size: 12px;
+    font-size: 16px;
     text-align: center;
 }
 
@@ -19,25 +19,24 @@
 .world__Textos__1 p{
     font-family: "Russo One";
     color: white;
-    width: 100%;
-    border-radius: 20px;
-    font-size: 12px;
+    font-size: 16px;
+    width:80%;
 }
 
 .world__Textos__2 p{
     font-family: "Russo One";
     color: white;
-    width: 100%;
+    width: 80%;
     border-radius: 20px;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .world__Textos__3 p{
     font-family: "Russo One";
     color: white;
-    width: 100%;
+    width: 80%;
     border-radius: 20px;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 /*MERCHANDISE*/
@@ -52,7 +51,7 @@
 }
 
 .indoors__temporada1__descripcion1 p{
-    font-size: 12px;
+    font-size: 16px;
     display:flex;
     justify-content: space-around;
     font-family: "Russo One";
@@ -64,7 +63,7 @@
 
 .gallery__text__container p{
     font-family: "Russo One";
-    font-size: 12px;
+    font-size: 16px;
     width:80%;
     color: white;
 }
@@ -74,5 +73,6 @@
 .contact__main__NuestroContacto{
     color:white;
     font-family: "Russo One";
-    font-size:13px;
+    font-size:15px;
+    margin-left: -140px;
 }

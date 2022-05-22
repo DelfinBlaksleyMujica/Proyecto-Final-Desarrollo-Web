@@ -60,12 +60,12 @@
 /*INDOORS*/
 
 .indoors__Titulo__Container{
-    font-size: 20px;
     h1{ 
         grid-area: indoors__Titulo__Container;
         color: black;
         -webkit-text-stroke:1px white;
         font-family: "Bungee";
+        font-size:40px;
     }
 }
 

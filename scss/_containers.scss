@@ -22,11 +22,11 @@
 .index__Texto__Container { 
     grid-area: index__Texto__Container;
     background-color: white;
-    width: 80%;
     border-radius: 20px; 
     margin-top: 50px;
-    margin-left: 150px;
     text-align: center;
+    width:50%;
+    margin-left: 480px;
 }
 
 
@@ -85,17 +85,35 @@
     margin-top:70px;
 }
 
+.world__Textos__1 div{
+    display: flex;
+    justify-content: center;
+}
+
+
 .world__leyDeAtraccion__titulo{
     display:flex;
     justify-content:center;
     margin-top:70px;
 }
 
+.world__Textos__2 div{
+    display: flex;
+    justify-content: center;
+}
+
+
 .world__vision__titulo{
     display:flex;
     justify-content:center;
     margin-top:70px;
 }
+
+.world__Textos__3 div{
+    display: flex;
+    justify-content: center;
+}
+
 
 /*MERCHANDISE*/
 
@@ -189,36 +207,36 @@
 
 .seccionContactos__Nombre{
     display:flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .seccionContactos__Mail{
     display:flex;
-    justify-content: space-evenly;
+    justify-content: center;
 
 }
 
 .seccionContactos__Telefono{
     display:flex;
-    justify-content: space-evenly;
+    justify-content: center;
 
 }
 
 
 .seccionContactos__Empresa{
     display:flex;
-    justify-content: space-evenly;
+    justify-content: center;
 
 }
 
 .seccionContactos__Asunto{
     display:flex;
-    justify-content: space-evenly;
+    justify-content: center;
 
 }
 
 .seccionContactos__Mensaje{
     display:flex;
-    justify-content: space-evenly;
+    justify-content: center;
 
 }
