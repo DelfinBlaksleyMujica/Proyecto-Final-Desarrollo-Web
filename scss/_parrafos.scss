@@ -1,42 +1,54 @@
+/*GENERALES*/
+.navBar .menuDeNavegacion li a{
+    color:$colorTextoMenuDeNavegacion;
+    text-decoration: none;
+    font-family: $tipogrfiaMenuDeNavegacion;
+    flex-wrap: wrap;
+    font-size: $tFuenteMenuDeNavegacion;
+}
 
 
-
-
+.footer p{ 
+    grid-area: footer;
+    color: $colorTextoFooter;
+    font-family: $tipografiaFooter;
+    font-size: $tFuenteFooter;
+    @include flex-row-spaceAround;
+    text-align: center;
+}
 
 
 /*INDEX*/
 
 
 .index__Texto__Container p{
-    font-family: "Russo One";
-    font-size: 16px;
-    text-align: center;
+    font-family: $tipografiaTextos;
+    font-size: $tParrafos;
 }
 
+.suscripciones__email{
+    font-family: $tipografiaFormularios;
+    font-size: $tTipografiaFormularios;
+}
 /*WORLD*/
 
 
 .world__Textos__1 p{
-    font-family: "Russo One";
-    color: white;
-    font-size: 16px;
-    width:80%;
+    font-family: $tipografiaTextos;
+    color: $colorTextos;
+    font-size: $tParrafos;
 }
 
 .world__Textos__2 p{
-    font-family: "Russo One";
-    color: white;
-    width: 80%;
-    border-radius: 20px;
-    font-size: 16px;
+    font-family: $tipografiaTextos;
+    color: $colorTextos;
+    font-size: $tParrafos;
 }
 
 .world__Textos__3 p{
-    font-family: "Russo One";
-    color: white;
-    width: 80%;
-    border-radius: 20px;
-    font-size: 16px;
+    font-family: $tipografiaTextos;
+    color: $colorTextos;
+    font-size: $tParrafos;
 }
 
 /*MERCHANDISE*/
@@ -45,34 +57,49 @@
 
 /*INDOORS*/
 
-.indoors__temporada1__descripcion1 h3{ 
-    font-family: "Bungee";
-    color: white;
-}
-
 .indoors__temporada1__descripcion1 p{
-    font-size: 16px;
-    display:flex;
-    justify-content: space-around;
-    font-family: "Russo One";
-    color: white;
+    font-size: $tParrafos;
+    font-family: $tipografiaTextos;
+    color: $colorTextos;
     
 }
 
 /*GALERIA*/
 
 .gallery__text__container p{
-    font-family: "Russo One";
-    font-size: 16px;
-    width:80%;
-    color: white;
+    font-family: $tipografiaTextos;
+    font-size: $tParrafos;
+    color: $colorTextos;
 }
 
 /*CONTACTO*/
 
 .contact__main__NuestroContacto{
-    color:white;
-    font-family: "Russo One";
-    font-size:15px;
-    margin-left: -140px;
+    color:$colorTextos;
+    font-family: $tipografiaTextos;
+    font-size:$tParrafos;
+}
+
+#nombre{
+    font-family: $tipografiaFormularios;
+}
+
+#mail{
+    font-family:  $tipografiaFormularios;
+}
+
+#telefono{
+    font-family:  $tipografiaFormularios;
+}
+
+#empresa{
+    font-family:  $tipografiaFormularios;
+}
+
+#asunto{
+    font-family:  $tipografiaFormularios;
+}
+
+#mensaje{
+    font-family:  $tipografiaFormularios;
 }

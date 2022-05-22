@@ -1,17 +1,41 @@
+/*GENERALES*/
+
+.logoMenuDeNavegacion__container{
+    @include flex-spaceEvenly;
+}
+
+.menuDeNavegacion{
+    @include flex-row-spaceAround;
+    list-style-type: none;
+    align-items: center;
+}
+
+.margin__izquierdo { 
+    grid-area: margin__izquierdo;
+}
+
+.margin__derecho { 
+    grid-area: margin__derecho;
+}
+
+.footer { 
+    grid-area: footer;
+    background-color: $colorFondoFooter;
+}
+
+
 /*INDEX*/
 
 .index__Titulo__Container { 
     grid-area: index__Titulo__Container;
     h1{
-        display:flex;
-        justify-content:space-evenly;
+        @include flex-spaceEvenly;
     }
 }
 
 .index__Video__Container { 
     grid-area: index__Video__Container;
-    display:flex;
-    justify-content: space-around; 
+    @include flex-row-spaceAround; 
     align-items: center;
     iframe{
         width:80%;
@@ -23,10 +47,11 @@
     grid-area: index__Texto__Container;
     background-color: white;
     border-radius: 20px; 
-    margin-top: 50px;
     text-align: center;
     width:50%;
-    margin-left: 480px;
+    p{
+        text-align: center;
+    }
 }
 
 
@@ -35,9 +60,18 @@
 }
 
 .suscripciones__titulo{
-    display:flex;
-    justify-content:space-evenly;
+    @include flex-spaceEvenly;
     text-align: center;
+}
+
+.suscripciones{
+    text-align: center;
+}
+
+.suscripciones__email{
+    width: 200px;
+    height: 20px;
+    background: linear-gradient(to left,silver,white);
 }
 
 .index__ManteneteActivado__Container { 
@@ -45,14 +79,11 @@
 }
 
 .canales__titulo{
-    display:flex;
-    justify-content:space-evenly;
+    @include flex-spaceEvenly;
 }
 
 .index__manteneteActivado__canales ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    @include flex-spaceEvenly;
     list-style-type: none;
     align-items: center;
 
@@ -65,13 +96,11 @@
 }
 
 .World__Titulo__Container h1{
-    display: flex;
-    justify-content:space-around;
+    @include flex-row-spaceAround;
 }
 
 .World__Titulo__SubContainer{
-    display:flex;
-    justify-content: space-evenly;
+    @include flex-spaceEvenly;
     align-items: center;
 }
 
@@ -80,38 +109,41 @@
 }
 
 .world__activa__titulo{
-    display:flex;
-    justify-content: center;
-    margin-top:70px;
+    @include flex-center;
 }
 
-.world__Textos__1 div{
-    display: flex;
-    justify-content: center;
+.world__Textos__1 {
+    div{
+    @include flex-center;
+    }
+    p{
+        width: 80%;
+    }
 }
 
 
 .world__leyDeAtraccion__titulo{
-    display:flex;
-    justify-content:center;
-    margin-top:70px;
+    @include flex-center;
 }
 
-.world__Textos__2 div{
-    display: flex;
-    justify-content: center;
+.world__Textos__2 {
+    div{
+    @include flex-center;}
+    p{
+        width: 80%;
+    }
 }
-
 
 .world__vision__titulo{
-    display:flex;
-    justify-content:center;
-    margin-top:70px;
+    @include flex-center;
 }
 
-.world__Textos__3 div{
-    display: flex;
-    justify-content: center;
+.world__Textos__3 {
+    div{
+    @include flex-center;}
+    p{
+        width: 80%;
+    }
 }
 
 
@@ -119,8 +151,7 @@
 
 .merchandise__main__container { 
     grid-area: merchandise__main__container;
-    display:flex;
-    justify-content: center;
+    @include flex-center;
     align-items: flex-start;
     background-image: url(../img/BTTF-Retro-1.gif);
     background-size: cover;
@@ -131,30 +162,28 @@
 
 .indoors__Titulo__Container h1{
     grid-area:indoors__Titulo__Container;
-    display:flex;
-    justify-content:space-evenly;
+    @include flex-spaceEvenly;
 }
 
 .indoors__Subtitulos__Container{
-    display:flex;
-    align-content: space-around;
+    @include flex-spaceEvenly;
     align-items: center;
-    justify-content: space-evenly;
 
 }
 
 .indoors__temporada1__episodio1 { 
     grid-area: indoors__temporada1__episodio1;
-    display:flex;
-    justify-content: space-around;
+    @include flex-row-spaceAround;
 }
 
 .indoors__temporada1__descripcion1{ 
     grid-area: indoors__temporada1__descripcion1;
     height:300px;
     h3{
-        display:flex;
-        justify-content:space-around;
+        @include flex-row-spaceAround;
+    }
+    p{
+        @include flex-row-spaceAround;
     }
 }
 
@@ -163,30 +192,29 @@
 
 .gallery__titulo__container h1{ 
     grid-area: gallery__titulo__container;
-    display:flex;
-    justify-content: space-evenly;
+    @include flex-spaceEvenly;
 }
 
 .gallery__main__container { 
     grid-area: gallery__main__container;
-    display:flex;
+    @include flex-center;
     flex-wrap: wrap; 
     align-content: stretch;
-    justify-content: center;
 }
 
 .gallery__text__container { 
     grid-area: gallery__text__container; 
-    display:flex;
-    justify-content: space-around;
+    @include flex-row-spaceAround;
     align-items: center;
+    p{
+        width:80%;
+    }
 }
 
 /*CONTACTO*/
 
 .contact__title{
-    display:flex;
-    justify-content: space-evenly;
+    @include flex-spaceEvenly;
 }
 
 .contact__main__container { 
@@ -194,11 +222,9 @@
 }
 
 .contact__main__NuestroContacto{
-    display:flex;
+    @include flex-spaceEvenly;
     list-style-type: none;
-    justify-content: space-evenly;
     align-items: baseline;
-    margin-left: -45px;
     li a{
         text-decoration: none;
         color: white;
@@ -206,37 +232,61 @@
 }
 
 .seccionContactos__Nombre{
-    display:flex;
-    justify-content: center;
+    @include flex-center;
+}
+
+#nombre{
+    width: 80%;
 }
 
 .seccionContactos__Mail{
-    display:flex;
-    justify-content: center;
+    @include flex-center;
+
+}
+
+#mail{
+    width: 80%;
 
 }
 
 .seccionContactos__Telefono{
-    display:flex;
-    justify-content: center;
+    @include flex-center;
+
+}
+
+#telefono{
+    width:80%;
 
 }
 
 
 .seccionContactos__Empresa{
-    display:flex;
-    justify-content: center;
+    @include flex-center;
+
+}
+
+#empresa{
+    width: 80%;
 
 }
 
 .seccionContactos__Asunto{
-    display:flex;
-    justify-content: center;
+    @include flex-center;
+
+}
+
+#asunto{
+    width: 80%;
 
 }
 
 .seccionContactos__Mensaje{
-    display:flex;
-    justify-content: center;
+    @include flex-center;
+
+}
+
+#mensaje{
+    width: 80%;
+    height:200px;
 
 }

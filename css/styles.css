@@ -1,3 +1,21 @@
+/*GENERALES*/
+/*TITULOS*/
+/*PARRAFOS*/
+/*SEPARACIONES*/
+/*PSEUDOCLASES*/
+/*GRILLAS*/
+/*CONTAINERS*/
+/*FORMULARIOS*/
+/*BOTONES*/
+.boton, #botonEnviarContactos, #episodios__selectTemporada, .suscripciones__button {
+  font-family: "Bungee";
+  background-color: black;
+  color: white;
+  border: solid 2px white;
+  width: 150px;
+}
+
+/*MEDIA QUARIES*/
 html {
   font-size: 62.5%;
 }
@@ -7,61 +25,14 @@ body {
   margin: 0;
 }
 
+/*GENERALES*/
 .navBar {
   grid-area: navBar;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.5fr 0.5fr;
   gap: 0px 0px;
-  grid-template-areas: "LogoMenuDeNavegacion" "menuDeNavegacion";
-}
-
-.LogoMenuDeNavegacion {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.menuDeNavegacion {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  list-style-type: none;
-  align-items: center;
-  margin-left: -30px;
-}
-
-.navBar .menuDeNavegacion li a {
-  color: white;
-  text-decoration: none;
-  font-family: "Bungee";
-  flex-wrap: wrap;
-  font-size: 1.8rem;
-}
-
-.footer {
-  grid-area: footer;
-  color: white;
-  font-family: "Bungee";
-  background-color: rgb(63, 19, 104);
-}
-
-.footer p {
-  grid-area: footer;
-  color: white;
-  font-family: "Bungee";
-  font-size: 10px;
-  background-color: rgb(63, 19, 104);
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-}
-
-.margin__izquierdo {
-  grid-area: margin__izquierdo;
-}
-
-.margin__derecho {
-  grid-area: margin__derecho;
+  grid-template-areas: "logoMenuDeNavegacion__container" "menuDeNavegacion";
 }
 
 /*INDEX*/
@@ -149,6 +120,33 @@ body {
   grid-template-areas: "navBar" "contact__title__container" "contact__main__container" "footer";
 }
 
+/*GENERALES*/
+.logoMenuDeNavegacion__container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menuDeNavegacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+  align-items: center;
+}
+
+.margin__izquierdo {
+  grid-area: margin__izquierdo;
+}
+
+.margin__derecho {
+  grid-area: margin__derecho;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: rgb(63, 19, 104);
+}
+
 /*INDEX*/
 .index__Titulo__Container {
   grid-area: index__Titulo__Container;
@@ -161,6 +159,7 @@ body {
 .index__Video__Container {
   grid-area: index__Video__Container;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
@@ -173,10 +172,11 @@ body {
   grid-area: index__Texto__Container;
   background-color: white;
   border-radius: 20px;
-  margin-top: 50px;
   text-align: center;
   width: 50%;
-  margin-left: 480px;
+}
+.index__Texto__Container p {
+  text-align: center;
 }
 
 .index__Suscripciones__Container {
@@ -187,6 +187,16 @@ body {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
+}
+
+.suscripciones {
+  text-align: center;
+}
+
+.suscripciones__email {
+  width: 200px;
+  height: 20px;
+  background: linear-gradient(to left, silver, white);
 }
 
 .index__ManteneteActivado__Container {
@@ -200,7 +210,6 @@ body {
 
 .index__manteneteActivado__canales ul {
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
   list-style-type: none;
   align-items: center;
@@ -213,6 +222,7 @@ body {
 
 .World__Titulo__Container h1 {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
 }
 
@@ -229,34 +239,40 @@ body {
 .world__activa__titulo {
   display: flex;
   justify-content: center;
-  margin-top: 70px;
 }
 
 .world__Textos__1 div {
   display: flex;
   justify-content: center;
 }
+.world__Textos__1 p {
+  width: 80%;
+}
 
 .world__leyDeAtraccion__titulo {
   display: flex;
   justify-content: center;
-  margin-top: 70px;
 }
 
 .world__Textos__2 div {
   display: flex;
   justify-content: center;
 }
+.world__Textos__2 p {
+  width: 80%;
+}
 
 .world__vision__titulo {
   display: flex;
   justify-content: center;
-  margin-top: 70px;
 }
 
 .world__Textos__3 div {
   display: flex;
   justify-content: center;
+}
+.world__Textos__3 p {
+  width: 80%;
 }
 
 /*MERCHANDISE*/
@@ -279,14 +295,14 @@ body {
 
 .indoors__Subtitulos__Container {
   display: flex;
-  align-content: space-around;
-  align-items: center;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .indoors__temporada1__episodio1 {
   grid-area: indoors__temporada1__episodio1;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
 }
 
@@ -296,6 +312,12 @@ body {
 }
 .indoors__temporada1__descripcion1 h3 {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.indoors__temporada1__descripcion1 p {
+  display: flex;
+  flex-direction: row;
   justify-content: space-around;
 }
 
@@ -309,16 +331,20 @@ body {
 .gallery__main__container {
   grid-area: gallery__main__container;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   align-content: stretch;
-  justify-content: center;
 }
 
 .gallery__text__container {
   grid-area: gallery__text__container;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
+.gallery__text__container p {
+  width: 80%;
 }
 
 /*CONTACTO*/
@@ -333,10 +359,9 @@ body {
 
 .contact__main__NuestroContacto {
   display: flex;
-  list-style-type: none;
   justify-content: space-evenly;
+  list-style-type: none;
   align-items: baseline;
-  margin-left: -45px;
 }
 .contact__main__NuestroContacto li a {
   text-decoration: none;
@@ -348,9 +373,17 @@ body {
   justify-content: center;
 }
 
+#nombre {
+  width: 80%;
+}
+
 .seccionContactos__Mail {
   display: flex;
   justify-content: center;
+}
+
+#mail {
+  width: 80%;
 }
 
 .seccionContactos__Telefono {
@@ -358,9 +391,17 @@ body {
   justify-content: center;
 }
 
+#telefono {
+  width: 80%;
+}
+
 .seccionContactos__Empresa {
   display: flex;
   justify-content: center;
+}
+
+#empresa {
+  width: 80%;
 }
 
 .seccionContactos__Asunto {
@@ -368,14 +409,23 @@ body {
   justify-content: center;
 }
 
+#asunto {
+  width: 80%;
+}
+
 .seccionContactos__Mensaje {
   display: flex;
   justify-content: center;
 }
 
+#mensaje {
+  width: 80%;
+  height: 200px;
+}
+
 /*INDEX*/
 .index__Titulo__Container h1 {
-  font-size: 40px;
+  font-size: 4rem;
   color: black;
   -webkit-text-stroke: 1px white;
   font-family: "Bungee";
@@ -383,128 +433,135 @@ body {
 
 .suscripciones__titulo {
   color: white;
-  font-size: 30px;
+  font-size: 3rem;
   font-family: "Bungee";
 }
 
 .canales__titulo {
   color: white;
-  font-size: 30px;
+  font-size: 3rem;
   font-family: "Bungee";
   margin-top: 0;
 }
 
 /*WORLD*/
 .World__Titulo__Container h1 {
-  font-family: "Bungee";
+  font-size: 4rem;
   color: black;
   -webkit-text-stroke: 1px white;
-  font-size: 40px;
+  font-family: "Bungee";
 }
 
 .world__activa__titulo {
-  font-size: 30px;
-  font-family: "Bungee";
   color: white;
+  font-size: 3rem;
+  font-family: "Bungee";
 }
 
 .world__leyDeAtraccion__titulo {
-  font-size: 30px;
-  font-family: "Bungee";
   color: white;
+  font-size: 3rem;
+  font-family: "Bungee";
 }
 
 .world__vision__titulo {
-  font-size: 30px;
-  font-family: "Bungee";
   color: white;
+  font-size: 3rem;
+  font-family: "Bungee";
 }
 
 /*MERCHANDISE*/
 .merchandise__main__container p {
+  color: black;
   font-family: "Bungee";
   font-size: 10rem;
-  color: black;
   -webkit-text-stroke: 3px white;
 }
 
 /*INDOORS*/
 .indoors__Titulo__Container h1 {
-  grid-area: indoors__Titulo__Container;
+  font-size: 4rem;
   color: black;
   -webkit-text-stroke: 1px white;
-  font-family: "Bungee";
-  font-size: 40px;
-}
-
-.episodios__titulo {
-  color: white;
   font-family: "Bungee";
 }
 
 .indoors__temporada1__descripcion1 h3 {
-  font-size: 30px;
+  color: white;
+  font-size: 3rem;
+  font-family: "Bungee";
 }
 
 /*GALERIA*/
 .gallery__titulo__container h1 {
-  font-family: "Bungee";
+  font-size: 4rem;
   color: black;
   -webkit-text-stroke: 1px white;
-  font-size: 40px;
+  font-family: "Bungee";
 }
 
 /*CONTACTO*/
 .contact__title {
-  grid-area: contact__title__container;
-  font-size: 40px;
+  font-size: 4rem;
   color: black;
   -webkit-text-stroke: 1px white;
   font-family: "Bungee";
+}
+
+/*GENERALES*/
+.navBar .menuDeNavegacion li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Bungee";
+  flex-wrap: wrap;
+  font-size: 1.8rem;
+}
+
+.footer p {
+  grid-area: footer;
+  color: white;
+  font-family: "Bungee";
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
 }
 
 /*INDEX*/
 .index__Texto__Container p {
   font-family: "Russo One";
-  font-size: 16px;
-  text-align: center;
+  font-size: 1.6rem;
+}
+
+.suscripciones__email {
+  font-family: "Russo One";
+  font-size: 1.6rem;
 }
 
 /*WORLD*/
 .world__Textos__1 p {
   font-family: "Russo One";
   color: white;
-  font-size: 16px;
-  width: 80%;
+  font-size: 1.6rem;
 }
 
 .world__Textos__2 p {
   font-family: "Russo One";
   color: white;
-  width: 80%;
-  border-radius: 20px;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .world__Textos__3 p {
   font-family: "Russo One";
   color: white;
-  width: 80%;
-  border-radius: 20px;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 /*MERCHANDISE*/
 /*INDOORS*/
-.indoors__temporada1__descripcion1 h3 {
-  font-family: "Bungee";
-  color: white;
-}
-
 .indoors__temporada1__descripcion1 p {
-  font-size: 16px;
-  display: flex;
-  justify-content: space-around;
+  font-size: 1.6rem;
   font-family: "Russo One";
   color: white;
 }
@@ -512,8 +569,7 @@ body {
 /*GALERIA*/
 .gallery__text__container p {
   font-family: "Russo One";
-  font-size: 16px;
-  width: 80%;
+  font-size: 1.6rem;
   color: white;
 }
 
@@ -521,72 +577,108 @@ body {
 .contact__main__NuestroContacto {
   color: white;
   font-family: "Russo One";
-  font-size: 15px;
-  margin-left: -140px;
+  font-size: 1.6rem;
+}
+
+#nombre {
+  font-family: "Russo One";
+}
+
+#mail {
+  font-family: "Russo One";
+}
+
+#telefono {
+  font-family: "Russo One";
+}
+
+#empresa {
+  font-family: "Russo One";
+}
+
+#asunto {
+  font-family: "Russo One";
+}
+
+#mensaje {
+  font-family: "Russo One";
+}
+
+/*GENERALES*/
+.menuDeNavegacion {
+  margin-left: -30px;
+}
+
+.index__Texto__Container {
+  margin-top: 50px;
+  margin-left: 480px;
 }
 
 /*INDEX*/
-.index__Suscripciones__Container form {
-  margin-top: 50px;
-}
-
-.suscripciones {
-  text-align: center;
-}
-
 .suscripciones__email {
-  width: 200px;
-  height: 20px;
-  background: linear-gradient(to left, silver, white);
-  font-family: "Russo One";
-  font-size: 16px;
   margin-right: 50px;
 }
 
-/*CONTACTO*/
-#Nombre {
-  width: 80%;
-  font-family: "Russo One";
-  margin-top: 50px;
-}
-
-#Mail {
-  width: 80%;
-  font-family: "Russo One";
-  margin-top: 20px;
-}
-
-#Telefono {
-  width: 80%;
-  font-family: "Russo One";
-  margin-top: 20px;
-}
-
-#Empresa {
-  width: 80%;
-  font-family: "Russo One";
-  margin-top: 20px;
-}
-
-#Asunto {
-  width: 80%;
-  font-family: "Russo One";
-  margin-top: 20px;
-}
-
-#Mensaje {
-  width: 80%;
-  height: 200px;
-  font-family: "Russo One";
-  margin-top: 20px;
-}
-
-/*INDEX*/
 .logoSpotify {
   margin-left: -110px;
 }
 
+/*WORLD*/
+.world__activa__titulo {
+  margin-top: 70px;
+}
+
+.world__leyDeAtraccion__titulo {
+  margin-top: 70px;
+}
+
+.world__vision__titulo {
+  margin-top: 70px;
+}
+
+/*MERCHANDISE*/
+/*INDOORS*/
+/*GALERIA*/
+/*CONTACTO*/
+.contact__main__NuestroContacto {
+  margin-left: -45px;
+}
+
+#nombre {
+  margin-top: 50px;
+}
+
+#mail {
+  margin-top: 20px;
+}
+
+#telefono {
+  margin-top: 20px;
+}
+
+#empresa {
+  margin-top: 20px;
+}
+
+#asunto {
+  margin-top: 20px;
+}
+
+#mensaje {
+  margin-top: 20px;
+}
+
+#botonEnviarContactos {
+  margin-top: 150px;
+  margin-left: 875px;
+}
+
 /*INDEX*/
+.logoMenuDeNavegacion:hover {
+  transform: scale(1.05);
+  transition: 1s;
+}
+
 .logoSpotify img {
   border-radius: 200px;
 }
@@ -606,83 +698,51 @@ body {
 .gallery__main__container img {
   margin: 10px 10px;
 }
-
-/*INDEX*/
-.suscripciones__button {
-  font-family: "Bungee";
-  background-color: black;
-  color: white;
-  border: solid 2px white;
-  width: 150px;
-  height: 50px;
-}
-
-/*INDOORS*/
-.indoors__Subtitulos__Container select {
-  font-family: "Bungee";
-  color: white;
-  background-color: black;
-  border: solid 2px white;
-  width: 150px;
-  height: 30px;
-}
-
-/*CONTACTO*/
-#BotonEnviarContactos {
-  font-family: "Bungee";
-  background-color: black;
-  color: white;
-  border: solid 2px white;
-  width: 150px;
-  height: 50px;
-  margin-top: 150px;
-  margin-left: 875px;
-}
-
-/*ANIMACIONES-TRANSFORMACIONES-TRANSICIONES*/
-/*GENERALES*/
-.logoMenuDeNavegacion:hover {
-  transform: scale(1.05);
+.gallery__main__container img:hover {
+  transform: scale(1.2);
   transition: 1s;
 }
 
-.navBar .menuDeNavegacion li .subrayado:hover {
-  border-bottom: solid 2px white;
-}
-
 /*INDEX*/
+.suscripciones__button {
+  height: 50px;
+}
 .suscripciones__button:hover {
   color: black;
   background-color: white;
   border: solid 2px black;
 }
 
-#BotonEnviarIndex:hover {
-  color: black;
-  background-color: white;
-  border: solid 2px black;
-}
-
 /*INDOORS*/
+#episodios__selectTemporada {
+  height: 30px;
+}
 #episodios__selectTemporada:hover {
   color: black;
   background-color: white;
   border: solid 2px black;
 }
 
-/*GALERIA*/
-.gallery__main__container img:hover {
-  transform: scale(1.5);
-  transition: 1s;
-}
-
 /*CONTACTO*/
-#BotonEnviarContactos:hover {
+#botonEnviarContactos {
+  height: 50px;
+}
+#botonEnviarContactos:hover {
   color: black;
   background-color: white;
   border: solid 2px black;
 }
 
+/*ANIMACIONES-TRANSFORMACIONES-TRANSICIONES*/
+/*GENERALES*/
+.navBar .menuDeNavegacion li .subrayado:hover {
+  border-bottom: solid 2px white;
+}
+
+/*INDEX*/
+/*INDOORS*/
+/*GALERIA*/
+/*CONTACTO*/
 /*GENERALES*/
 @media (max-width: 404px) {
   .navBar {
@@ -722,7 +782,7 @@ body {
 }
 @media (max-width: 480px) {
   .navBar .menuDeNavegacion li a {
-    margin-left: 5px;
+    margin-left: 4px;
   }
 }
 @media (max-width: 320px) {
@@ -768,22 +828,22 @@ body {
 }
 @media (max-width: 1200px) {
   .footer p {
-    font-size: 9px;
+    font-size: 1.14rem;
   }
 }
 @media (max-width: 1024px) {
   .footer p {
-    font-size: 8px;
+    font-size: 1.02rem;
   }
 }
 @media (max-width: 950px) {
   .footer p {
-    font-size: 7.6px;
+    font-size: 0.95rem;
   }
 }
 @media (max-width: 768px) {
   .footer p {
-    font-size: 5.93px;
+    font-size: 0.85rem;
   }
 }
 /*INDEX*/
@@ -800,22 +860,22 @@ body {
 }
 @media (max-width: 1200px) {
   .index__Titulo__Container h1 {
-    font-size: 38px;
+    font-size: 3.8rem;
   }
 }
 @media (max-width: 1024px) {
   .index__Titulo__Container h1 {
-    font-size: 34px;
+    font-size: 3.4rem;
   }
 }
 @media (max-width: 950px) {
   .index__Titulo__Container h1 {
-    font-size: 26px;
+    font-size: 2.6rem;
   }
 }
 @media (max-width: 768px) {
   .index__Titulo__Container h1 {
-    font-size: 24px;
+    font-size: 2.4rem;
   }
 }
 @media (max-width: 1400px) {
@@ -825,7 +885,7 @@ body {
 }
 @media (max-width: 1200px) {
   .index__Texto__Container p {
-    font-size: 14px;
+    font-size: 1.4rem;
   }
 
   .index__Texto__Container {
@@ -842,7 +902,7 @@ body {
     margin-left: 238px;
   }
   .index__Texto__Container p {
-    font-size: 12px;
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 768px) {
@@ -870,37 +930,37 @@ body {
 }
 @media (max-width: 1200px) {
   .suscripciones__titulo {
-    font-size: 28.5px;
+    font-size: 2.85rem;
   }
 }
 @media (max-width: 1024px) {
   .suscripciones__titulo {
-    font-size: 25.65px;
+    font-size: 2.565rem;
   }
 }
 @media (max-width: 950px) {
   .suscripciones__titulo {
-    font-size: 24.36px;
+    font-size: 2.436rem;
   }
 }
 @media (max-width: 768px) {
   .suscripciones__titulo {
-    font-size: 19px;
+    font-size: 1.9rem;
   }
 }
 @media (max-width: 1200px) {
   .suscripciones__email {
-    font-size: 14px;
+    font-size: 1.4rem;
   }
 }
 @media (max-width: 950px) {
   .suscripciones__email {
-    font-size: 12px;
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 600px) {
   .suscripciones__email {
-    font-size: 10px;
+    font-size: 1rem;
   }
 }
 @media (max-width: 320px) {
@@ -912,48 +972,48 @@ body {
   .suscripciones__button {
     width: 142.5px;
     height: 47.5px;
-    font-size: 11px;
+    font-size: 1.1rem;
   }
 }
 @media (max-width: 1024px) {
   .suscripciones__button {
     width: 128.25px;
     height: 42.75px;
-    font-size: 9.9px;
+    font-size: 0.99rem;
   }
 }
 @media (max-width: 950px) {
   .suscripciones__button {
     width: 121.84px;
     height: 40.61px;
-    font-size: 9.41px;
+    font-size: 0.941rem;
   }
 }
 @media (max-width: 768px) {
   .suscripciones__button {
     width: 95.04px;
     height: 31.68px;
-    font-size: 7.34px;
+    font-size: 0.734rem;
   }
 }
 @media (max-width: 1200px) {
   .canales__titulo {
-    font-size: 28.5px;
+    font-size: 2.85rem;
   }
 }
 @media (max-width: 1024px) {
   .canales__titulo {
-    font-size: 25.65px;
+    font-size: 2.565rem;
   }
 }
 @media (max-width: 950px) {
   .canales__titulo {
-    font-size: 24.37px;
+    font-size: 2.437rem;
   }
 }
 @media (max-width: 768px) {
   .canales__titulo {
-    font-size: 19px;
+    font-size: 1.9rem;
   }
 }
 @media (max-width: 320px) {
@@ -1019,22 +1079,22 @@ body {
 }
 @media (max-width: 1200px) {
   .World__Titulo__Container h1 {
-    font-size: 38px;
+    font-size: 3.8rem;
   }
 }
 @media (max-width: 1024px) {
   .World__Titulo__Container h1 {
-    font-size: 34px;
+    font-size: 3.4rem;
   }
 }
 @media (max-width: 950px) {
   .World__Titulo__Container h1 {
-    font-size: 26px;
+    font-size: 2.6rem;
   }
 }
 @media (max-width: 768px) {
   .World__Titulo__Container h1 {
-    font-size: 24px;
+    font-size: 2.4rem;
   }
 }
 @media (max-width: 1200px) {
@@ -1063,32 +1123,32 @@ body {
 }
 @media (max-width: 1200px) {
   .world__activa__titulo {
-    font-size: 28.5px;
+    font-size: 2.85rem;
   }
 }
 @media (max-width: 1024px) {
   .world__activa__titulo {
-    font-size: 25.65px;
+    font-size: 2.565rem;
   }
 }
 @media (max-width: 950px) {
   .world__activa__titulo {
-    font-size: 24.37px;
+    font-size: 2.437rem;
   }
 }
 @media (max-width: 768px) {
   .world__activa__titulo {
-    font-size: 19px;
+    font-size: 1.9rem;
   }
 }
 @media (max-width: 1200px) {
   .world__Textos__1 p {
-    font-size: 14px;
+    font-size: 1.4rem;
   }
 }
 @media (max-width: 950px) {
   .world__Textos__1 p {
-    font-size: 12px;
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 430px) {
@@ -1099,32 +1159,32 @@ body {
 }
 @media (max-width: 1200px) {
   .world__leyDeAtraccion__titulo {
-    font-size: 28.5px;
+    font-size: 2.85rem;
   }
 }
 @media (max-width: 1024px) {
   .world__leyDeAtraccion__titulo {
-    font-size: 25.65px;
+    font-size: 2.565rem;
   }
 }
 @media (max-width: 950px) {
   .world__leyDeAtraccion__titulo {
-    font-size: 23.09px;
+    font-size: 2.309rem;
   }
 }
 @media (max-width: 768px) {
   .world__leyDeAtraccion__titulo {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 }
 @media (max-width: 1200px) {
   .world__Textos__2 p {
-    font-size: 14px;
+    font-size: 1.4rem;
   }
 }
 @media (max-width: 950px) {
   .world__Textos__2 p {
-    font-size: 12px;
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 430px) {
@@ -1135,32 +1195,32 @@ body {
 }
 @media (max-width: 1200px) {
   .world__vision__titulo {
-    font-size: 28.5px;
+    font-size: 2.85rem;
   }
 }
 @media (max-width: 1024px) {
   .world__vision__titulo {
-    font-size: 25.65px;
+    font-size: 2.565rem;
   }
 }
 @media (max-width: 950px) {
   .world__vision__titulo {
-    font-size: 24.37px;
+    font-size: 2.437rem;
   }
 }
 @media (max-width: 768px) {
   .world__vision__titulo {
-    font-size: 19px;
+    font-size: 1.9rem;
   }
 }
 @media (max-width: 1200px) {
   .world__Textos__3 p {
-    font-size: 14px;
+    font-size: 1.4rem;
   }
 }
 @media (max-width: 950px) {
   .world__Textos__3 p {
-    font-size: 12px;
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 430px) {
@@ -1312,62 +1372,62 @@ body {
 }
 @media (max-width: 1200px) {
   .indoors__Titulo__Container h1 {
-    font-size: 38px;
+    font-size: 3.8rem;
   }
 }
 @media (max-width: 1024px) {
   .indoors__Titulo__Container h1 {
-    font-size: 34px;
+    font-size: 3.4rem;
   }
 }
 @media (max-width: 950px) {
   .indoors__Titulo__Container h1 {
-    font-size: 26px;
+    font-size: 2.6rem;
   }
 }
 @media (max-width: 768px) {
   .indoors__Titulo__Container h1 {
-    font-size: 24px;
+    font-size: 2.4rem;
   }
 }
 @media (max-width: 1200px) {
   .indoors__Subtitulos__Container select {
-    font-size: 11px;
+    font-size: 1.1rem;
   }
 }
 @media (max-width: 1024px) {
   .indoors__Subtitulos__Container select {
-    font-size: 9.9px;
+    font-size: 0.99rem;
   }
 }
 @media (max-width: 950px) {
   .indoors__Subtitulos__Container select {
-    font-size: 9.41px;
+    font-size: 0.941rem;
   }
 }
 @media (max-width: 768px) {
   .indoors__Subtitulos__Container select {
-    font-size: 7.34px;
+    font-size: 0.734rem;
   }
 }
 @media (max-width: 1200px) {
   .indoors__temporada1__descripcion1 h3 {
-    font-size: 28.5px;
+    font-size: 2.85rem;
   }
 }
 @media (max-width: 1024px) {
   .indoors__temporada1__descripcion1 h3 {
-    font-size: 25.65px;
+    font-size: 2.565rem;
   }
 }
 @media (max-width: 950px) {
   .indoors__temporada1__descripcion1 h3 {
-    font-size: 24.37px;
+    font-size: 2.437rem;
   }
 }
 @media (max-width: 768px) {
   .indoors__temporada1__descripcion1 h3 {
-    font-size: 19px;
+    font-size: 1.9rem;
   }
 }
 @media (max-width: 768px) {
@@ -1378,12 +1438,12 @@ body {
 }
 @media (max-width: 1200px) {
   .indoors__temporada1__descripcion1 p {
-    font-size: 14px;
+    font-size: 1.4rem;
   }
 }
 @media (max-width: 950px) {
   .indoors__temporada1__descripcion1 p {
-    font-size: 12px;
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 600px) {
@@ -1449,32 +1509,32 @@ body {
 }
 @media (max-width: 1200px) {
   .gallery__titulo__container h1 {
-    font-size: 38px;
+    font-size: 3.8rem;
   }
 }
 @media (max-width: 1024px) {
   .gallery__titulo__container h1 {
-    font-size: 34px;
+    font-size: 3.4rem;
   }
 }
 @media (max-width: 950px) {
   .gallery__titulo__container h1 {
-    font-size: 26px;
+    font-size: 2.6rem;
   }
 }
 @media (max-width: 768px) {
   .gallery__titulo__container h1 {
-    font-size: 24px;
+    font-size: 2.4rem;
   }
 }
 @media (max-width: 1200px) {
   .gallery__text__container p {
-    font-size: 14px;
+    font-size: 1.4rem;
   }
 }
 @media (max-width: 950px) {
   .gallery__text__container p {
-    font-size: 12px;
+    font-size: 1.2rem;
   }
 }
 /*CONTACTO*/
@@ -1502,32 +1562,32 @@ body {
 }
 @media (max-width: 1200px) {
   .contact__title__container h1 {
-    font-size: 38px;
+    font-size: 3.8rem;
   }
 }
 @media (max-width: 1024px) {
   .contact__title__container h1 {
-    font-size: 34px;
+    font-size: 3.4rem;
   }
 }
 @media (max-width: 950px) {
   .contact__title__container h1 {
-    font-size: 26px;
+    font-size: 2.6rem;
   }
 }
 @media (max-width: 768px) {
   .contact__title__container h1 {
-    font-size: 24px;
+    font-size: 2.4rem;
   }
 }
 @media (max-width: 1200px) {
   .contact__main__NuestroContacto {
-    font-size: 14px;
+    font-size: 1.4rem;
   }
 }
 @media (max-width: 950px) {
   .contact__main__NuestroContacto {
-    font-size: 12px;
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 479px) {
@@ -1556,160 +1616,149 @@ body {
   }
 }
 @media (max-width: 1024px) {
-  #Nombre {
-    font-size: 12px;
+  #nombre {
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 768px) {
-  #Nombre {
-    font-size: 11px;
+  #nombre {
+    font-size: 1.1rem;
   }
 }
 @media (max-width: 1024px) {
-  #Mail {
-    font-size: 12px;
+  #mail {
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 768px) {
-  #Mail {
-    font-size: 11px;
+  #mail {
+    font-size: 1.1rem;
   }
 }
 @media (max-width: 1024px) {
-  #Telefono {
-    font-size: 12px;
+  #telefono {
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 768px) {
-  #Telefono {
-    font-size: 11px;
+  #telefono {
+    font-size: 1.1rem;
   }
 }
 @media (max-width: 1024px) {
-  #Empresa {
-    font-size: 12px;
+  #empresa {
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 768px) {
-  #Empresa {
-    font-size: 11px;
+  #empresa {
+    font-size: 1.1rem;
   }
 }
 @media (max-width: 1024px) {
-  #Asunto {
-    font-size: 12px;
+  #asunto {
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 768px) {
-  #Asunto {
-    font-size: 11px;
+  #asunto {
+    font-size: 1.1rem;
   }
 }
 @media (max-width: 1024px) {
-  #Mensaje {
-    font-size: 12px;
+  #mensaje {
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 768px) {
-  #Mensaje {
-    font-size: 10px;
+  #mensaje {
+    font-size: 1rem;
   }
 }
 @media (max-width: 480px) {
-  #Mensaje {
-    font-size: 11px;
+  #mensaje {
+    font-size: 1.1rem;
   }
 }
 @media (max-width: 1750px) {
-  #BotonEnviarContactos {
+  #botonEnviarContactos {
     margin-left: 550px;
   }
 }
 @media (max-width: 1700px) {
-  #BotonEnviarContactos {
+  #botonEnviarContactos {
     margin-left: 565px;
   }
 }
 @media (max-width: 1650px) {
-  #BotonEnviarContactos {
+  #botonEnviarContactos {
     margin-left: 525px;
   }
 }
 @media (max-width: 1500px) {
-  #BotonEnviarContactos {
+  #botonEnviarContactos {
     margin-left: 495px;
   }
 }
 @media (max-width: 1400px) {
-  #BotonEnviarContactos {
+  #botonEnviarContactos {
     margin-left: 620px;
   }
 }
 @media (max-width: 1300px) {
-  #BotonEnviarContactos {
+  #botonEnviarContactos {
     margin-left: 410px;
   }
 }
 @media (max-width: 1200px) {
-  #BotonEnviarContactos {
+  #botonEnviarContactos {
     margin-left: 533px;
     width: 142.5px;
     height: 47.5px;
-    font-size: 11px;
+    font-size: 1.1rem;
   }
 }
 @media (max-width: 1024px) {
-  #BotonEnviarContactos {
+  #botonEnviarContactos {
     margin-left: 453px;
     width: 128.25px;
     height: 42.75px;
-    font-size: 9.9px;
+    font-size: 0.99rem;
   }
 }
 @media (max-width: 950px) {
-  #BotonEnviarContactos {
+  #botonEnviarContactos {
     margin-top: 25px;
     margin-bottom: 25px;
     margin-left: 422px;
     width: 95px;
     height: 31.68px;
-    font-size: 7.34px;
+    font-size: 0.734rem;
   }
 }
 @media (max-width: 768px) {
-  #BotonEnviarContactos {
+  #botonEnviarContactos {
     margin-top: 85px;
     margin-bottom: 5px;
     margin-left: 340px;
-    width: 95px;
-    height: 31.68px;
-    font-size: 7.34px;
   }
 }
 @media (max-width: 600px) {
-  #BotonEnviarContactos {
+  #botonEnviarContactos {
     margin-top: 25px;
     margin-bottom: 25px;
     margin-left: 267px;
-    width: 95px;
-    height: 31.68px;
-    font-size: 7.34px;
   }
 }
 @media (max-width: 480px) {
-  #BotonEnviarContactos {
+  #botonEnviarContactos {
     margin-left: 200px;
   }
 }
 @media (max-width: 320px) {
-  #BotonEnviarContactos {
-    margin-left: 125px;
+  #botonEnviarContactos {
+    margin-left: 115px;
   }
 }
-/*INDEX*/
-/*MERCHANDISE*/
-/*INDOORS*/
-/*GALERIA*/
-/*CONTACTO*/
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,36 +1,31 @@
 /*INDEX*/
 
 .suscripciones__button{
-    font-family: "Bungee";
-    background-color: black;
-    color: white;
-    border: solid 2px white;
-    width:150px;
+    @extend .boton;
     height:50px;
+    &:hover{
+        @include botonHover (black,white,solid 2px black)                 
+    }
 }
 
 /*INDOORS*/
 
-.indoors__Subtitulos__Container select{
-    font-family: "Bungee";
-    color: white;
-    background-color:black;
-    border: solid 2px white;
-    width:150px;
+#episodios__selectTemporada{
+    @extend .boton;
     height:30px;
+    &:hover{
+        @include botonHover (black,white,solid 2px black) 
+    }
 }
 
 /*CONTACTO*/
 
-#BotonEnviarContactos{
-    font-family: "Bungee";
-    background-color:black;
-    color: white;
-    border: solid 2px white;
-    width:150px;
+#botonEnviarContactos{
+    @extend .boton;
     height:50px;
-    margin-top: 150px;
-    margin-left:875px;
+    &:hover{
+        @include botonHover (black,white,solid 2px black)
+    }
 }
 
 

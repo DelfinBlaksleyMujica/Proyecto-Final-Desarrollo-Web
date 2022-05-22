@@ -1,100 +1,95 @@
 /*INDEX*/
 
 .index__Titulo__Container h1{
-    font-size: 40px;
-    color: black;
-    -webkit-text-stroke:1px white;
-    font-family: "Bungee";
+    font-size: map-get($map: $tituloDePagina, $key: tFuente );
+    color:map-get($map: $tituloDePagina, $key: color );
+    -webkit-text-stroke:map-get($map: $tituloDePagina, $key:estilo );
+    font-family: map-get($map: $tituloDePagina, $key:tFamilia );
 }
 
 .suscripciones__titulo{
-    color: white;
-    font-size: 30px;
-    font-family: "Bungee";
+    color:map-get($map: $titulosEnPagina, $key:color);
+    font-size:map-get($map: $titulosEnPagina, $key:tFuente );
+    font-family: map-get($map: $titulosEnPagina, $key:tFamilia );
 }
 
 .canales__titulo{
-    color: white;
-    font-size: 30px;
-    font-family: "Bungee";
+    color:map-get($map: $titulosEnPagina, $key:color);
+    font-size:map-get($map: $titulosEnPagina, $key:tFuente );
+    font-family: map-get($map: $titulosEnPagina, $key:tFamilia );
     margin-top: 0;
 }
 
 /*WORLD*/
 
 .World__Titulo__Container h1{
-    font-family: "Bungee";
-    color: black;
-    -webkit-text-stroke:1px white;
-    font-size: 40px;
+    font-size: map-get($map: $tituloDePagina, $key: tFuente );
+    color:map-get($map: $tituloDePagina, $key: color );
+    -webkit-text-stroke:map-get($map: $tituloDePagina, $key:estilo );
+    font-family: map-get($map: $tituloDePagina, $key:tFamilia );
 }
 
 .world__activa__titulo{
-    font-size: 30px;
-    font-family: "Bungee";
-    color: white;
+    color:map-get($map: $titulosEnPagina, $key:color);
+    font-size:map-get($map: $titulosEnPagina, $key:tFuente );
+    font-family: map-get($map: $titulosEnPagina, $key:tFamilia );
 }
 
 
 .world__leyDeAtraccion__titulo{
-    font-size: 30px;
-    font-family: "Bungee";
-    color: white;
+    color:map-get($map: $titulosEnPagina, $key:color);
+    font-size:map-get($map: $titulosEnPagina, $key:tFuente );
+    font-family: map-get($map: $titulosEnPagina, $key:tFamilia );
 }
 
 .world__vision__titulo{
-    font-size: 30px;
-    font-family: "Bungee";
-    color: white;
+    color:map-get($map: $titulosEnPagina, $key:color);
+    font-size:map-get($map: $titulosEnPagina, $key:tFuente );
+    font-family: map-get($map: $titulosEnPagina, $key:tFamilia );
 }
 
 /*MERCHANDISE*/
 
 .merchandise__main__container p{
-    font-family: "Bungee";
-    font-size: 10rem;
-    color: black;
-    -webkit-text-stroke:3px white;
+    color:map-get($map: $tituloMerchandise, $key:color );
+    font-family: map-get($map: $tituloMerchandise, $key:tFamilia);
+    font-size: map-get($map: $tituloMerchandise, $key:tFuente);
+    -webkit-text-stroke:map-get($map: $tituloMerchandise, $key:estilo);
 }
 
 /*INDOORS*/
 
-.indoors__Titulo__Container{
-    h1{ 
-        grid-area: indoors__Titulo__Container;
-        color: black;
-        -webkit-text-stroke:1px white;
-        font-family: "Bungee";
-        font-size:40px;
-    }
+.indoors__Titulo__Container h1{
+    font-size: map-get($map: $tituloDePagina, $key: tFuente );
+    color:map-get($map: $tituloDePagina, $key: color );
+    -webkit-text-stroke:map-get($map: $tituloDePagina, $key:estilo );
+    font-family: map-get($map: $tituloDePagina, $key:tFamilia );
 }
 
-.episodios__titulo{
-    color: white;
-    font-family: "Bungee";
-}
+
 
 .indoors__temporada1__descripcion1 h3{
-    font-size: 30px;
+    color:map-get($map: $titulosEnPagina, $key:color);
+    font-size:map-get($map: $titulosEnPagina, $key:tFuente );
+    font-family: map-get($map: $titulosEnPagina, $key:tFamilia );
 }
 
 /*GALERIA*/
 
 .gallery__titulo__container h1{
-    font-family: "Bungee";
-    color: black;
-    -webkit-text-stroke:1px white;
-    font-size: 40px;
+    font-size: map-get($map: $tituloDePagina, $key: tFuente );
+    color:map-get($map: $tituloDePagina, $key: color );
+    -webkit-text-stroke:map-get($map: $tituloDePagina, $key:estilo );
+    font-family: map-get($map: $tituloDePagina, $key:tFamilia );
 }
 
 
 /*CONTACTO*/
 
 .contact__title{ 
-    grid-area: contact__title__container; 
-    font-size: 40px;
-    color: black;
-    -webkit-text-stroke:1px white;
-    font-family: "Bungee";
+    font-size: map-get($map: $tituloDePagina, $key: tFuente );
+    color:map-get($map: $tituloDePagina, $key: color );
+    -webkit-text-stroke:map-get($map: $tituloDePagina, $key:estilo );
+    font-family: map-get($map: $tituloDePagina, $key:tFamilia );
 }
 

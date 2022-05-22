@@ -1,0 +1,105 @@
+/*GENERALES*/
+
+$tipogrfiaMenuDeNavegacion:"Bungee";
+$colorTextoMenuDeNavegacion:white;
+$tFuenteMenuDeNavegacion:1.8rem;
+$tipografiaFooter:"Bungee";
+$colorTextoFooter:white;
+$tFuenteFooter:1.2rem;
+$colorFondoFooter:rgb(63, 19, 104);
+
+
+
+/*TITULOS*/
+$tituloDePagina:(
+    color:black,
+    tFuente:4rem,
+    tFamilia:"Bungee",
+    estilo:1px white,
+);
+
+$titulosEnPagina:(
+    color:white,
+    tFuente:3rem,
+    tFamilia:"Bungee",
+);
+
+$tituloMerchandise:(
+    color:black,
+    tFuente:10rem,
+    tFamilia:"Bungee",
+    estilo:3px white,
+);
+
+
+/*PARRAFOS*/
+$tipografiaTextos: "Russo One";
+$colorTextos:white;
+$colorTextosAlternativo:black;
+$tParrafos:1.6rem;
+
+
+
+
+/*SEPARACIONES*/
+$separacionSuperiorTitulosWorld:70px;
+$separacionSuperiorFormularioContactos:20px;
+
+
+
+/*PSEUDOCLASES*/
+
+@mixin botonHover ($colorTexto,$colorFondo,$borde) {
+    color:$colorTexto;
+    background-color: $colorFondo;
+    border: $borde;
+    
+}
+
+/*GRILLAS*/
+
+
+/*CONTAINERS*/
+@mixin flex-row-spaceAround{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@mixin flex-spaceEvenly {
+    display:flex;
+    justify-content:space-evenly;
+}
+
+@mixin flex-center {
+    display:flex;
+    justify-content: center;  
+}
+
+
+
+
+/*FORMULARIOS*/
+$tipografiaFormularios:"Russo One";
+$tTipografiaFormularios:1.6rem;
+
+/*BOTONES*/
+
+.boton{
+    font-family: "Bungee";
+    background-color:black;
+    color: white;
+    border: solid 2px white;
+    width: 150px;
+}
+
+/*MEDIA QUARIES*/
+
+$desktopGrandes:1400px;
+$desktop:1200px;
+$ipadHorizontal:1024px;
+$ipadVertical:768px;
+$tablet:600px;
+$mobileHorizontal:480px;
+$mobile:320px;
+

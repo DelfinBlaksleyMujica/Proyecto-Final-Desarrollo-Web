@@ -7,13 +7,13 @@
 }
 }
 
-@media (max-width:1200px) {
+@media (max-width:$desktop) {
     .navBar .menuDeNavegacion li a{
         font-size: 1.7rem;
 }
 }
 
-@media (max-width:1024px) {
+@media (max-width:$ipadHorizontal) {
     .navBar .menuDeNavegacion li a{
         font-size: 1.5rem;
 }
@@ -39,20 +39,20 @@
 
 
 
-@media (max-width:600px) {
+@media (max-width:$tablet) {
     .navBar .menuDeNavegacion li a{
         font-size: 0.85rem;
         margin-left:3px;
 }
 }
 
-@media (max-width:480px) {
+@media (max-width:$mobileHorizontal) {
     .navBar .menuDeNavegacion li a{
-        margin-left:5px;
+        margin-left:4px;
 }
 }
 
-@media (max-width:320px) {
+@media (max-width:$mobile) {
     .navBar .menuDeNavegacion li a{
         font-size:0.8rem;
 }
@@ -62,14 +62,14 @@
 
 
 
-@media (max-width:1200px) {
+@media (max-width:$desktop) {
     .logoMenuDeNavegacion a img{
     height:95%;
     width: 95%;
 }
 }
 
-@media (max-width:1024px) {
+@media (max-width:$ipadHorizontal) {
     .logoMenuDeNavegacion a img{
     height:85%;
     width: 85%;
@@ -86,7 +86,7 @@
 
 
 
-@media (max-width:320px) {
+@media (max-width:$mobile) {
     .logoMenuDeNavegacion a img{
     height:65%;
     width: 65%;
@@ -94,14 +94,14 @@
 }
 }
 
-@media (max-width:768px) {
+@media (max-width:$ipadVertical) {
     .logoMenuDeNavegacion{
         width: 100px;
     }
 
 }
 
-@media (max-width:320px) {
+@media (max-width:$mobile) {
     .logoMenuDeNavegacion{
         width: 60px;
     }
@@ -110,30 +110,30 @@
 
 
 
-@media (max-width:1200px) {
+@media (max-width:$desktop) {
     .footer p{
-        font-size:9px;
+        font-size:1.14rem;
     }
     
 }
 
-@media (max-width:1024px) {
+@media (max-width:$ipadHorizontal) {
     .footer p{
-        font-size:8px;
+        font-size:1.02rem;
     }
     
 }
 
 @media (max-width:950px) {
     .footer p{
-        font-size:7.6px;
+        font-size:0.95rem;
     }
     
 }
 
-@media (max-width:768px) {
+@media (max-width:$ipadVertical) {
     .footer p{
-        font-size:5.93px;
+        font-size:0.85rem;
 
     }
     
@@ -142,7 +142,7 @@
 /*INDEX*/
 
 
-@media (max-width:768px) {
+@media (max-width:$ipadVertical) {
     .index-container {  
         display: grid;
         grid-template-columns:1fr;
@@ -163,43 +163,43 @@
 
 
 
-@media (max-width:1200px) {
+@media (max-width:$desktop) {
     .index__Titulo__Container h1{
-        font-size: 38px;
+        font-size: 3.8rem;
     }
     
 }
 
-@media (max-width:1024px) {
+@media (max-width:$ipadHorizontal) {
     .index__Titulo__Container h1{
-        font-size: 34px;
+        font-size: 3.4rem;
     }
     
 }
 
 @media (max-width:950px) {
     .index__Titulo__Container h1{
-        font-size: 26px;
+        font-size: 2.6rem;
     }
     
 }
 
-@media (max-width:768px) {
+@media (max-width:$ipadVertical) {
     .index__Titulo__Container h1{
-        font-size: 24px;
+        font-size: 2.4rem;
     }
     
 }
 
-@media (max-width:1400px) {
+@media (max-width:$desktopGrandes) {
     .index__Texto__Container{
         margin-left: 350px;
     }
 }
 
-@media (max-width:1200px) {
+@media (max-width:$desktop) {
     .index__Texto__Container p{
-        font-size: 14px;
+        font-size: 1.4rem;
     }
     .index__Texto__Container{
         margin-left: 301px;
@@ -207,7 +207,7 @@
     
 }
 
-@media (max-width:1024px) {
+@media (max-width:$ipadHorizontal) {
     .index__Texto__Container{
         margin-left: 255px;}    
 }
@@ -216,27 +216,27 @@
     .index__Texto__Container{
         margin-left: 238px;
         p{
-            font-size: 12px;
+            font-size: 1.2rem;
         }
     }
     
 }
 
-@media (max-width:768px) {
+@media (max-width:$ipadVertical) {
     .index__Texto__Container{
         margin-left: 193px;
     }
     
 }
 
-@media (max-width:600px) {
+@media (max-width:$tablet) {
     .index__Texto__Container{
         margin-left: 151px;
     }
     
 }
 
-@media (max-width:480px) {
+@media (max-width:$mobileHorizontal) {
     .index__Texto__Container{
         margin-top: 10px;
         margin-left:119px ;
@@ -245,7 +245,7 @@
     
 }
 
-@media (max-width:320px) {
+@media (max-width:$mobile) {
     .index__Texto__Container{
         margin-bottom: 50px;
         margin-left: 20px;
@@ -254,38 +254,38 @@
     
 }
 
-@media (max-width:1200px) {
+@media (max-width:$desktop) {
     .suscripciones__titulo{
-        font-size:28.5px;
+        font-size:2.85rem;
     }
     
 }
 
-@media (max-width:1024px) {
+@media (max-width:$ipadHorizontal) {
     .suscripciones__titulo{
-        font-size:25.65px;
+        font-size:2.565rem;
     }
     
 }
 
 @media (max-width:950px) {
     .suscripciones__titulo{
-        font-size:24.36px;
+        font-size:2.436rem;
     }
     
 }
 
-@media (max-width:768px) {
+@media (max-width:$ipadVertical) {
     .suscripciones__titulo{
-        font-size:19px;
+        font-size:1.9rem;
     }
     
 }
 
 
-@media (max-width:1200px) {
+@media (max-width:$desktop) {
     .suscripciones__email{
-        font-size: 14px;
+        font-size: 1.4rem;
     }
     
 }
@@ -293,39 +293,39 @@
 
 @media (max-width:950px) {
     .suscripciones__email{
-        font-size: 12px;
+        font-size: 1.2rem;
     }
     
 }
 
-@media (max-width:600px) {
+@media (max-width:$tablet) {
     .suscripciones__email{
-        font-size: 10px;
+        font-size: 1rem;
     }
     
 }
 
-@media (max-width:320px) {
+@media (max-width:$mobile) {
     .suscripciones__email{
         width:150px;
     }
     
 }
 
-@media (max-width:1200px) {
+@media (max-width:$desktop) {
     .suscripciones__button{
         width:142.5px;
         height:47.5px;
-        font-size: 11px;
+        font-size: 1.1rem;
     }
     
 }
 
-@media (max-width:1024px) {
+@media (max-width:$ipadHorizontal) {
     .suscripciones__button{
         width:128.25px;
         height:42.75px;
-        font-size: 9.9px;
+        font-size: 0.99rem;
     }
     
 }
@@ -334,62 +334,62 @@
     .suscripciones__button{
         width:121.84px;
         height:40.61px;
-        font-size: 9.41px;
+        font-size: 0.941rem;
     }
     
 }
 
-@media (max-width:768px) {
+@media (max-width:$ipadVertical) {
     .suscripciones__button{
         width:95.04px;
         height:31.68px;
-        font-size: 7.34px;
+        font-size: 0.734rem;
     }
     
 }
 
-@media (max-width:1200px) {
+@media (max-width:$desktop) {
     .canales__titulo{
-        font-size:28.5px;
+        font-size:2.85rem;
     }
     
 }
 
-@media (max-width:1024px) {
+@media (max-width:$ipadHorizontal) {
     .canales__titulo{
-        font-size:25.65px;
+        font-size:2.565rem;
     }
     
 }
 
 @media (max-width:950px) {
     .canales__titulo{
-        font-size:24.37px;
+        font-size:2.437rem;
     }
     
 }
 
-@media (max-width:768px) {
+@media (max-width:$ipadVertical) {
     .canales__titulo{
-        font-size:19px;
+        font-size:1.9rem;
     }
     
 }
 
-@media (max-width:320px) {
+@media (max-width:$mobile) {
     .index__manteneteActivado__canales ul{
         margin-left: -12px;
     }
     
 }
 
-@media (max-width:768px) {
+@media (max-width:$ipadVertical) {
     .logoSpotify{
         margin-left: -80px;
     }
 }
 
-@media (max-width:600px) {
+@media (max-width:$tablet) {
     .logoSpotify{
         margin-left: -60px;
     }
@@ -428,7 +428,7 @@
     
 }
 
-@media (max-width:600px) {
+@media (max-width:$tablet) {
     .World__Container {  
         display: grid;
         grid-template-columns:1fr;
@@ -462,35 +462,35 @@
     
 }
 
-@media (max-width:1200px) {
+@media (max-width:$desktop) {
     .World__Titulo__Container h1{
-        font-size:38px;
+        font-size:3.8rem;
     }
     
 }
 
-@media (max-width:1024px) {
+@media (max-width:$ipadHorizontal) {
     .World__Titulo__Container h1{
-        font-size:34px;
+        font-size:3.4rem;
     }
     
 }
 
 @media (max-width:950px) {
     .World__Titulo__Container h1{
-        font-size:26px;
+        font-size:2.6rem;
     }
     
 }
 
-@media (max-width:768px) {
+@media (max-width:$ipadVertical) {
     .World__Titulo__Container h1{
-        font-size:24px;
+        font-size:2.4rem;
     }
     
 }
 
-@media (max-width:1200px) {
+@media (max-width:$desktop) {
     .World__Titulo__Container div img{
         width: 95px;
         height:95px;
@@ -498,7 +498,7 @@
     
 }
 
-@media (max-width:1024px) {
+@media (max-width:$ipadHorizontal) {
     .World__Titulo__Container div img{
         width: 85px;
         height:85px;
@@ -514,7 +514,7 @@
     
 }
 
-@media (max-width:768px) {
+@media (max-width:$ipadVertical) {
     .World__Titulo__Container div img{
         width: 62.4px;
         height:62.4px;
@@ -522,39 +522,39 @@
     
 }
 
-@media (max-width:1200px) {
+@media (max-width:$desktop) {
     .world__activa__titulo{
-        font-size: 28.5px;
+        font-size: 2.85rem;
     }
 }
 
-@media (max-width:1024px) {
+@media (max-width:$ipadHorizontal) {
     .world__activa__titulo{
-        font-size: 25.65px;
+        font-size: 2.565rem;
     }
 }
 
 @media (max-width:950px) {
     .world__activa__titulo{
-        font-size: 24.37px;
+        font-size: 2.437rem;
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:$ipadVertical) {
     .world__activa__titulo{
-        font-size: 19px;
+        font-size: 1.9rem;
     }
 }
 
-@media (max-width:1200px) {
+@media (max-width:$desktop) {
     .world__Textos__1 p{
-        font-size: 14px;
+        font-size: 1.4rem;
     }
 }
 
 @media (max-width:950px) {
     .world__Textos__1 p{
-        font-size: 12px;
+        font-size: 1.2rem;
     }
 }
 
@@ -568,39 +568,39 @@
 }
 
 
-@media (max-width:1200px) {
+@media (max-width:$desktop) {
     .world__leyDeAtraccion__titulo{
-        font-size: 28.5px;
+        font-size: 2.85rem;
     }
 }
 
-@media (max-width:1024px) {
+@media (max-width:$ipadHorizontal) {
     .world__leyDeAtraccion__titulo{
-        font-size: 25.65px;
+        font-size: 2.565rem;
     }
 }
 
 @media (max-width:950px) {
     .world__leyDeAtraccion__titulo{
-        font-size: 23.09px;
+        font-size: 2.309rem;
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:$ipadVertical) {
     .world__leyDeAtraccion__titulo{
-        font-size: 18px;
+        font-size: 1.8rem;
     }
 }
 
-@media (max-width:1200px) {
+@media (max-width:$desktop) {
     .world__Textos__2 p{
-        font-size: 14px;
+        font-size: 1.4rem;
     }
 }
 
 @media (max-width:950px) {
     .world__Textos__2 p{
-        font-size: 12px;
+        font-size: 1.2rem;
     }
 }
 
@@ -615,39 +615,39 @@
 
 
 
-@media (max-width:1200px) {
+@media (max-width:$desktop) {
     .world__vision__titulo{
-        font-size: 28.5px;
+        font-size: 2.85rem;
     }
 }
 
-@media (max-width:1024px) {
+@media (max-width:$ipadHorizontal) {
     .world__vision__titulo{
-        font-size: 25.65px;
+        font-size: 2.565rem;
     }
 }
 
 @media (max-width:950px) {
     .world__vision__titulo{
-        font-size: 24.37px;
+        font-size: 2.437rem;
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:$ipadVertical) {
     .world__vision__titulo{
-        font-size: 19px;
+        font-size: 1.9rem;
     }
 }
 
-@media (max-width:1200px) {
+@media (max-width:$desktop) {
     .world__Textos__3 p{
-        font-size: 14px;
+        font-size: 1.4rem;
     }
 }
 
 @media (max-width:950px) {
     .world__Textos__3 p{
-        font-size: 12px;
+        font-size: 1.2rem;
     }
 }
 
@@ -679,7 +679,7 @@
 
 }
 
-@media (max-width:768px) {
+@media (max-width:$ipadVertical) {
     .merchandise-Container {  
         display: grid;
         grid-template-columns:1fr;
@@ -783,7 +783,7 @@
 }
 
 
-@media (max-width:320px) {
+@media (max-width:$mobile) {
     .merchandise-Container {  
         display: grid;
         grid-template-columns:1fr;
@@ -805,28 +805,28 @@
     }
 }
 
-@media (max-width:1200px) {
+@media (max-width:$desktop) {
     .merchandise__main__container p{
     font-size: 8rem;
-  }
-  
 }
 
-@media (max-width:1024px) {
-  .merchandise__main__container p{
-      font-size: 7rem;
-  }
-  
+}
+
+@media (max-width:$ipadHorizontal) {
+.merchandise__main__container p{
+    font-size: 7rem;
+}
+
 }
 
 @media (max-width:950px) {
-  .merchandise__main__container p{
-      font-size: 6rem;
-  }
-  
+.merchandise__main__container p{
+    font-size: 6rem;
 }
 
-@media (max-width:768px) {
+}
+
+@media (max-width:$ipadVertical) {
   .merchandise__main__container p{
       font-size: 5.5rem;
   }
@@ -834,21 +834,21 @@
 }
 
 
-@media (max-width:768px) {
+@media (max-width:$ipadVertical) {
   .merchandise__main__container p{
       font-size: 5rem;
   }
   
 }
 
-@media (max-width:480px) {
+@media (max-width:$mobileHorizontal) {
   .merchandise__main__container p{
       font-size: 4.5rem;
   }
   
 }
 
-@media (max-width:320px) {
+@media (max-width:$mobile) {
   .merchandise__main__container p{
     font-size: 4rem;
   }
@@ -857,7 +857,7 @@
 
 /*INDOORS*/
 
-@media (max-width:768px) {
+@media (max-width:$ipadVertical) {
     .indoors-container {  
         display: grid;
         grid-template-columns:1fr;
@@ -876,87 +876,87 @@
 }
 
 
-@media (max-width:1200px) {
+@media (max-width:$desktop) {
     .indoors__Titulo__Container h1{
-        font-size:38px;
+        font-size:3.8rem;
     }
     
 }
 
-@media (max-width:1024px) {
+@media (max-width:$ipadHorizontal) {
     .indoors__Titulo__Container h1{
-        font-size:34px;
+        font-size:3.4rem;
     }
     
 }
 
 @media (max-width:950px) {
     .indoors__Titulo__Container h1{
-        font-size:26px;
+        font-size:2.6rem;
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:$ipadVertical) {
     .indoors__Titulo__Container h1{
-        font-size:24px;
+        font-size:2.4rem;
     }
 }
 
-@media (max-width:1200px) {
+@media (max-width:$desktop) {
     .indoors__Subtitulos__Container select{
-        font-size: 11px;
+        font-size: 1.1rem;
     }
 }
 
-@media (max-width:1024px) {
+@media (max-width:$ipadHorizontal) {
     .indoors__Subtitulos__Container select{
-        font-size: 9.9px;
+        font-size: 0.99rem;
     }
 }
 
 @media (max-width:950px) {
     .indoors__Subtitulos__Container select{
-        font-size: 9.41px;
+        font-size: 0.941rem;
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:$ipadVertical) {
     .indoors__Subtitulos__Container select{
-        font-size: 7.34px;
+        font-size: 0.734rem;
     }
 }
 
 
-@media (max-width:1200px) {
+@media (max-width:$desktop) {
     .indoors__temporada1__descripcion1 h3{
-        font-size:28.5px;
+        font-size:2.85rem;
     }
     
 }
 
-@media (max-width:1024px) {
+@media (max-width:$ipadHorizontal) {
     .indoors__temporada1__descripcion1 h3{
-        font-size:25.65px;
+        font-size:2.565rem;
     }
     
 }
 
 @media (max-width:950px) {
     .indoors__temporada1__descripcion1 h3{
-        font-size:24.37px;
+        font-size:2.437rem;
     }
     
 }
 
-@media (max-width:768px) {
+@media (max-width:$ipadVertical) {
     .indoors__temporada1__descripcion1 h3{
-        font-size:19px;
+        font-size:1.9rem;
     }
     
 }
 
 
-@media (max-width:768px) {
+@media (max-width:$ipadVertical) {
     .indoors__temporada1__episodio1 video{
         width:100%;
         margin-bottom: 100px;
@@ -965,9 +965,9 @@
 }
 
 
-@media (max-width:1200px) {
+@media (max-width:$desktop) {
     .indoors__temporada1__descripcion1 p{
-        font-size: 14px;
+        font-size: 1.4rem;
     }
     
 }
@@ -975,12 +975,12 @@
 
 @media (max-width:950px) {
     .indoors__temporada1__descripcion1 p{
-        font-size: 12px;
+        font-size: 1.2rem;
     }
 }
 
 
-@media (max-width:600px) {
+@media (max-width:$tablet) {
     .indoors__temporada1__descripcion1 p{
         margin-bottom: 50px;
     }
@@ -1006,7 +1006,7 @@
     
 }
 
-@media (max-width:1200px) {
+@media (max-width:$desktop) {
     .gallery-container {  
         display: grid;
         grid-template-columns:1fr;
@@ -1060,7 +1060,7 @@
     
 }
 
-@media (max-width:768px) {
+@media (max-width:$ipadVertical) {
     .gallery-container {  
         display: grid;
         grid-template-columns:1fr;
@@ -1078,52 +1078,52 @@
     
 }
 
-@media (max-width:1200px) {
+@media (max-width:$desktop) {
     .gallery__titulo__container h1{
-        font-size: 38px;
+        font-size: 3.8rem;
     }
     
 }
 
-@media (max-width:1024px) {
+@media (max-width:$ipadHorizontal) {
     .gallery__titulo__container h1{
-        font-size: 34px;
+        font-size: 3.4rem;
     }
     
 }
 
 @media (max-width:950px) {
     .gallery__titulo__container h1{
-        font-size: 26px;
+        font-size: 2.6rem;
     }
     
 }
 
-@media (max-width:768px) {
+@media (max-width:$ipadVertical) {
     .gallery__titulo__container h1{
-        font-size: 24px;
+        font-size: 2.4rem;
     }
     
 }
 
 
-@media (max-width:1200px) {
+@media (max-width:$desktop) {
     .gallery__text__container p{
-        font-size:14px;
+        font-size:1.4rem;
     }
     
 }
 
 @media (max-width:950px) {
     .gallery__text__container p{
-        font-size:12px;
+        font-size:1.2rem;
     }
     
 }
 
 /*CONTACTO*/
 
-@media (max-width:768px) {
+@media (max-width:$ipadVertical) {
     .contact-container {  
         display: grid;
         grid-template-columns: 1fr;
@@ -1140,7 +1140,7 @@
     
 }
 
-@media (max-width:320px) {
+@media (max-width:$mobile) {
     .contact-container {  
         display: grid;
         grid-template-columns:1fr;
@@ -1158,34 +1158,34 @@
 }
 
 
-@media (max-width:1200px) {
+@media (max-width:$desktop) {
     .contact__title__container h1{
-        font-size:38px;
+        font-size:3.8rem;
     }
 }
 
-@media (max-width:1024px) {
+@media (max-width:$ipadHorizontal) {
     .contact__title__container h1{
-        font-size:34px;
+        font-size:3.4rem;
     }
 }
 
 @media (max-width:950px) {
     .contact__title__container h1{
-        font-size:26px;
+        font-size:2.6rem;
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:$ipadVertical) {
     .contact__title__container h1{
-        font-size:24px;
+        font-size:2.4rem;
     }
 }
 
 
-@media (max-width:1200px) {
+@media (max-width:$desktop) {
     .contact__main__NuestroContacto{
-        font-size: 14px;
+        font-size: 1.4rem;
     }
     
 }
@@ -1193,7 +1193,7 @@
 
 @media (max-width:950px) {
     .contact__main__NuestroContacto{
-        font-size: 12px;
+        font-size: 1.2rem;
     }
     
 }
@@ -1211,21 +1211,21 @@
 }
 
 
-@media (max-width:320px) {
+@media (max-width:$mobile) {
     .contact__main__NuestroContacto{
         font-size: 10px;
     }
     
 }
 
-@media (max-width:768px) {
+@media (max-width:$ipadVertical) {
     .contact__main__NuestroContacto{
         margin-left: -55px;
     }
     
 }
 
-@media (max-width:480px) {
+@media (max-width:$mobileHorizontal) {
     .contact__main__NuestroContacto{
         margin-left: -35px;
     }
@@ -1233,148 +1233,148 @@
 
 
 
-@media (max-width:1024px) {
-    #Nombre{
-        font-size: 12px;
+@media (max-width:$ipadHorizontal) {
+    #nombre{
+        font-size: 1.2rem;
     }
     
 }
 
-@media (max-width:768px) {
-    #Nombre{
-        font-size: 11px;
-    }
-    
-}
-
-
-@media (max-width:1024px) {
-    #Mail{
-        font-size: 12px;
-    }
-    
-}
-
-@media (max-width:768px) {
-    #Mail{
-        font-size: 11px;
+@media (max-width:$ipadVertical) {
+    #nombre{
+        font-size: 1.1rem;
     }
     
 }
 
 
-@media (max-width:1024px) {
-    #Telefono{
-        font-size: 12px;
+@media (max-width:$ipadHorizontal) {
+    #mail{
+        font-size: 1.2rem;
     }
     
 }
 
-@media (max-width:768px) {
-    #Telefono{
-        font-size: 11px;
-    }
-    
-}
-
-
-
-@media (max-width:1024px) {
-    #Empresa{
-        font-size: 12px;
-    }
-    
-}
-
-@media (max-width:768px) {
-    #Empresa{
-        font-size: 11px;
+@media (max-width:$ipadVertical) {
+    #mail{
+        font-size: 1.1rem;
     }
     
 }
 
 
-@media (max-width:1024px) {
-    #Asunto{
-        font-size: 12px;
+@media (max-width:$ipadHorizontal) {
+    #telefono{
+        font-size: 1.2rem;
     }
     
 }
 
-@media (max-width:768px) {
-    #Asunto{
-        font-size: 11px;
+@media (max-width:$ipadVertical) {
+    #telefono{
+        font-size: 1.1rem;
     }
     
 }
 
-@media (max-width:1024px) {
-    #Mensaje{
-        font-size: 12px;
+
+
+@media (max-width:$ipadHorizontal) {
+    #empresa{
+        font-size: 1.2rem;
     }
     
 }
 
-@media (max-width:768px) {
-    #Mensaje{
-        font-size: 10px;
+@media (max-width:$ipadVertical) {
+    #empresa{
+        font-size: 1.1rem;
     }
     
 }
 
-@media (max-width:480px) {
-    #Mensaje{
-        font-size: 11px;
+
+@media (max-width:$ipadHorizontal) {
+    #asunto{
+        font-size: 1.2rem;
+    }
+    
+}
+
+@media (max-width:$ipadVertical) {
+    #asunto{
+        font-size: 1.1rem;
+    }
+    
+}
+
+@media (max-width:$ipadHorizontal) {
+    #mensaje{
+        font-size: 1.2rem;
+    }
+    
+}
+
+@media (max-width:$ipadVertical) {
+    #mensaje{
+        font-size: 1rem;
+    }
+    
+}
+
+@media (max-width:$mobileHorizontal) {
+    #mensaje{
+        font-size: 1.1rem;
     }
     
 }
 
 @media (max-width:1750px) {
-    #BotonEnviarContactos{
+    #botonEnviarContactos{
         margin-left:550px;
     }
     
 }
 
 @media (max-width:1700px) {
-    #BotonEnviarContactos{
+    #botonEnviarContactos{
         margin-left:565px;
     }
     
 }
 
 @media (max-width:1650px) {
-    #BotonEnviarContactos{
+    #botonEnviarContactos{
         margin-left:525px;
     }
     
 }
 
 @media (max-width:1500px) {
-    #BotonEnviarContactos{
+    #botonEnviarContactos{
         margin-left:495px;
     }
     
 }
 
-@media (max-width:1400px) {
-    #BotonEnviarContactos{
+@media (max-width:$desktopGrandes) {
+    #botonEnviarContactos{
         margin-left:620px;
     }
 }
 
 @media (max-width:1300px) {
-    #BotonEnviarContactos{
+    #botonEnviarContactos{
         margin-left:410px;
     }
 }
 
-@media (max-width:1200px) {
-    #BotonEnviarContactos{
+@media (max-width:$desktop) {
+    #botonEnviarContactos{
         margin-left:533px;
         width:142.5px;
         height:47.5px;
-        font-size: 11px;
+        font-size: 1.1rem;
 
     }
     
@@ -1382,57 +1382,52 @@
 
 
 
-@media (max-width:1024px) {
-    #BotonEnviarContactos{
+@media (max-width:$ipadHorizontal) {
+    #botonEnviarContactos{
         margin-left:453px;
         width:128.25px;
         height:42.75px;
-        font-size: 9.9px;
+        font-size: 0.99rem;
     }
 }
 
 
 @media (max-width:950px) {
-    #BotonEnviarContactos{
+    #botonEnviarContactos{
         margin-top: 25px;
         margin-bottom: 25px;
         margin-left:422px;
         width:95px;
         height:31.68px;
-        font-size: 7.34px;
+        font-size: 0.734rem;
     }
 }
 
-@media (max-width:768px) {
-    #BotonEnviarContactos{
+@media (max-width:$ipadVertical) {
+    #botonEnviarContactos{
         margin-top: 85px;
         margin-bottom: 5px;
         margin-left:340px;
-        width:95px;
-        height:31.68px;
-        font-size: 7.34px;
     }
 }
 
-@media (max-width:600px) {
-    #BotonEnviarContactos{
+@media (max-width:$tablet) {
+    #botonEnviarContactos{
         margin-top: 25px;
         margin-bottom: 25px;
         margin-left:267px;
-        width:95px;
-        height:31.68px;
-        font-size: 7.34px;
+
     }
 }
 
-@media (max-width:480px) {
-    #BotonEnviarContactos{
+@media (max-width:$mobileHorizontal) {
+    #botonEnviarContactos{
         margin-left:200px;
     }
 }
 
-@media (max-width:320px) {
-    #BotonEnviarContactos{
-        margin-left:125px;
+@media (max-width:$mobile) {
+    #botonEnviarContactos{
+        margin-left:115px;
     }
 }

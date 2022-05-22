@@ -3,10 +3,6 @@
 
 /*GENERALES*/
 
-.logoMenuDeNavegacion:hover{
-    transform: scale(1.05);
-    transition: 1s;
-}
 
 .navBar .menuDeNavegacion li .subrayado:hover{
     border-bottom:solid 2px white;
@@ -14,39 +10,15 @@
 
 /*INDEX*/
 
-.suscripciones__button:hover{
-    color: black;
-    background-color: white;
-    border: solid 2px black;
-}
-
-#BotonEnviarIndex:hover{
-    color: black;
-    background-color: white;
-    border: solid 2px black;
-}
 
 /*INDOORS*/
-#episodios__selectTemporada:hover{
-    color: black;
-    background-color: white;
-    border: solid 2px black;
-}
+
 
 /*GALERIA*/
 
-.gallery__main__container img:hover{
-    transform:scale(1.5);
-    transition: 1s;
-}
 
 
 /*CONTACTO*/
 
-#BotonEnviarContactos:hover{
-    color: black;
-    background-color: white;
-    border: solid 2px black;
-}
 
 

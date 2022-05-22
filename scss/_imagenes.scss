@@ -1,5 +1,10 @@
 /*INDEX*/
 
+.logoMenuDeNavegacion:hover{
+    transform: scale(1.05);
+    transition: 1s;
+}
+
 
 .logoSpotify img{
     border-radius: 200px;
@@ -23,4 +28,8 @@
 
 .gallery__main__container img {
     margin:10px 10px;
+    &:hover{
+        transform:scale(1.2);
+        transition: 1s;
+    }
 }
