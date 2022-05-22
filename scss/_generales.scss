@@ -9,6 +9,18 @@ body{
 
 .navBar { 
     grid-area: navBar;
+    display: grid; 
+    grid-template-columns:1fr; 
+    grid-template-rows: 0.5fr 0.5fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "LogoMenuDeNavegacion"
+    "menuDeNavegacion";
+}
+
+.LogoMenuDeNavegacion{
+    display:flex;
+    justify-content: space-evenly;
 }
 
 .menuDeNavegacion{

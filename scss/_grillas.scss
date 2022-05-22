@@ -2,18 +2,18 @@
 
 .index-container {  
     display: grid;
-    grid-template-columns: 0.6fr 3fr 0.6fr;
+    grid-template-columns:1fr;
     grid-template-rows: 0.5fr 0.5fr 3fr 2fr 1fr 0.1fr;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-    "margin__izquierdo navBar margin__derecho"
-    "margin__izquierdo index__Titulo__Container margin__derecho"
-    "margin__izquierdo index__VideoyTexto__Container margin__derecho"
-    "margin__izquierdo index__Suscripciones__Container margin__derecho"
-    "margin__izquierdo index__ManteneteActivado__Container margin__derecho"
-    "margin__izquierdo footer margin__derecho";
+    "navBar"
+    "index__Titulo__Container"
+    "index__VideoyTexto__Container"
+    "index__Suscripciones__Container"
+    "index__ManteneteActivado__Container"
+    "footer";
 }
 
 
@@ -32,53 +32,53 @@
 
 .World__Container {  
     display: grid;
-    grid-template-columns: 0.6fr 3fr 0.6fr;
+    grid-template-columns:1fr;
     grid-template-rows: 0.5fr 0.5fr 5fr 0.1fr;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-    "margin__izquierdo navBar margin__derecho"
-    "margin__izquierdo World__Titulo__Container margin__derecho"
-    "margin__izquierdo World__AboutUs__Container margin__derecho"
-    "margin__izquierdo footer margin__derecho";
+    "navBar"
+    "World__Titulo__Container"
+    "World__AboutUs__Container"
+    "footer";
 }
 
 /*MERCHANDISE*/
 
 .merchandise-Container {  
     display: grid;
-    grid-template-columns: 0.6fr 3fr 0.6fr;
+    grid-template-columns:1fr;
     grid-template-rows: 0.5fr 4fr 0.1fr;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-    "margin__izquierdo navBar margin__derecho"
-    "margin__izquierdo merchandise__main__container margin__derecho"
-    "margin__izquierdo footer margin__derecho";
+    "navBar"
+    "merchandise__main__container"
+    "footer";
 }
 
 /*INDOORS*/
 
 .indoors-container {  
     display: grid;
-    grid-template-columns: 0.6fr 3fr 0.6fr;
+    grid-template-columns:1fr;
     grid-template-rows: 0.5fr 0.5fr 0.5fr 5.5fr 0.1fr;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-    "margin__izquierdo navBar margin__derecho"
-    "margin__izquierdo indoors__Titulo__Container margin__derecho"
-    "margin__izquierdo indoors__Subtitulos__Container margin__derecho"
-    "margin__izquierdo indoors__CapitulosyDescripciones__Container margin__derecho"
-    "margin__izquierdo footer margin__derecho";
+    "navBar"
+    "indoors__Titulo__Container"
+    "indoors__Subtitulos__Container"
+    "indoors__CapitulosyDescripciones__Container"
+    "footer";
 }
 
 .indoors__CapitulosyDescripciones__Container {  
     display: grid;
-    grid-template-columns: 0.6fr 3fr 0.6fr;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
     grid-template-rows: 1.5fr 0.5fr ;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -94,17 +94,17 @@
 
 .gallery-container {  
     display: grid;
-    grid-template-columns: 0.6fr 3fr 0.6fr;
+    grid-template-columns:1fr;
     grid-template-rows: 0.5fr 0.5fr 5fr 1fr 0.1fr;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-    "margin__izquierdo navBar margin__derecho"
-    "margin__izquierdo gallery__titulo__container margin__derecho"
-    "margin__izquierdo gallery__main__container margin__derecho"
-    "margin__izquierdo gallery__text__container margin__derecho"
-    "margin__izquierdo footer margin__derecho";
+    "navBar"
+    "gallery__titulo__container"
+    "gallery__main__container"
+    "gallery__text__container"
+    "footer";
 }
 
 
@@ -112,14 +112,14 @@
 
 .contact-container {  
     display: grid;
-    grid-template-columns: 0.6fr 3fr 0.6fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 0.5fr 5fr 0.1fr;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-    "margin__izquierdo navBar margin__derecho"
-    "margin__izquierdo contact__title__container margin__derecho"
-    "margin__izquierdo contact__main__container margin__derecho"
-    "margin__izquierdo footer margin__derecho";
+    "navBar"
+    "contact__title__container"
+    "contact__main__container"
+    "footer";
 }
