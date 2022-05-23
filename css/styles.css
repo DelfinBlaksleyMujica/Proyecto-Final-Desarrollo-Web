@@ -805,6 +805,11 @@ body {
     width: 150px;
   }
 }
+@media (max-width: 400px) {
+  .logoMenuDeNavegacion {
+    width: 100px;
+  }
+}
 @media (max-width: 1200px) {
   .footer p {
     font-size: 1.14rem;
