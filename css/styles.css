@@ -72,7 +72,7 @@ body {
 .merchandise-Container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 4fr 0.1fr;
+  grid-template-rows: 0.5fr 3fr 0.1fr;
   grid-auto-columns: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
@@ -104,7 +104,7 @@ body {
 .gallery-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 0.5fr 5fr 0.1fr;
+  grid-template-rows: 0.5fr 0.5fr 2fr 0.1fr;
   grid-auto-columns: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
@@ -343,17 +343,6 @@ body {
   align-content: stretch;
 }
 
-.gallery__text__container {
-  grid-area: gallery__text__container;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-.gallery__text__container p {
-  width: 80%;
-}
-
 /*Contacto*/
 .contact__title {
   display: flex;
@@ -571,13 +560,6 @@ body {
 .indoors__temporada1__descripcion1 p {
   font-size: 1.6rem;
   font-family: "Russo One";
-  color: white;
-}
-
-/*Galeria*/
-.gallery__text__container p {
-  font-family: "Russo One";
-  font-size: 1.6rem;
   color: white;
 }
 
@@ -1340,94 +1322,6 @@ body {
   }
 }
 /*Merchandise*/
-@media (max-width: 950px) {
-  .merchandise-Container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 4.5fr 0.1fr;
-    grid-auto-columns: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "navBar" "merchandise__main__container" "footer";
-  }
-}
-@media (max-width: 768px) {
-  .merchandise-Container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 7fr 0.1fr;
-    grid-auto-columns: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "navBar" "merchandise__main__container" "footer";
-  }
-}
-@media (max-width: 383px) {
-  .merchandise-Container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 7.5fr 0.1fr;
-    grid-auto-columns: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "navBar" "merchandise__main__container" "footer";
-  }
-}
-@media (max-width: 361px) {
-  .merchandise-Container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 8fr 0.1fr;
-    grid-auto-columns: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "navBar" "merchandise__main__container" "footer";
-  }
-}
-@media (max-width: 343px) {
-  .merchandise-Container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 8.3fr 0.1fr;
-    grid-auto-columns: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "navBar" "merchandise__main__container" "footer";
-  }
-}
-@media (max-width: 333px) {
-  .merchandise-Container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 8.5fr 0.1fr;
-    grid-auto-columns: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "navBar" "merchandise__main__container" "footer";
-  }
-}
-@media (max-width: 325px) {
-  .merchandise-Container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 8.8fr 0.1fr;
-    grid-auto-columns: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "navBar" "merchandise__main__container" "footer";
-  }
-}
-@media (max-width: 320px) {
-  .merchandise-Container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 12fr 0.1fr;
-    grid-auto-columns: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "navBar" "merchandise__main__container" "footer";
-  }
-}
 @media (max-width: 1300px) {
   .merchandise__main__container p {
     font-size: 9rem;
@@ -1678,31 +1572,12 @@ body {
     font-size: 2.4rem;
   }
 }
-@media (max-width: 1200px) {
-  .gallery__text__container p {
-    font-size: 1.4rem;
-  }
-}
-@media (max-width: 950px) {
-  .gallery__text__container p {
-    font-size: 1.2rem;
-  }
-}
-@media (max-width: 639px) {
-  .gallery__text__container {
-    align-items: flex-start;
-  }
-  .gallery__text__container p {
-    width: 49%;
-    margin-top: 120px;
-  }
-}
 /*Contacto*/
 @media (max-width: 768px) {
   .contact-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 0.5fr 6fr 0.1fr;
+    grid-template-rows: 0.5fr 0.5fr 3.5fr 0.1fr;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -1713,7 +1588,7 @@ body {
   .contact-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 0.5fr 8fr 0.1fr;
+    grid-template-rows: 0.5fr 0.5fr 4fr 0.1fr;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;

@@ -209,14 +209,6 @@
     align-content: stretch;
 }
 
-.gallery__text__container { 
-    grid-area: gallery__text__container; 
-    @include flex-row-spaceAround;
-    align-items: center;
-    p{
-        width:80%;
-    }
-}
 
 /*Contacto*/
 
