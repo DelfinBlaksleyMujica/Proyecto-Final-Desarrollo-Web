@@ -3,6 +3,11 @@
 
 /*Generales*/
 
+.navBar .menuDeNavegacion li a{
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+
 .logoMenuDeNavegacion__container{
     @include flex-spaceEvenly;
 }
@@ -24,6 +29,10 @@
 .footer { 
     grid-area: footer;
     background-color: $colorFondoFooter;
+    p{
+        @include flex-row-spaceAround;
+        text-align: center;       
+    }
 }
 
 

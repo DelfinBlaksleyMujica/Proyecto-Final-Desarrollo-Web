@@ -104,7 +104,7 @@ body {
 .gallery-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 0.5fr 2fr 0.1fr;
+  grid-template-rows: 0.5fr 0.5fr 2fr 0.05fr;
   grid-auto-columns: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
@@ -124,6 +124,11 @@ body {
 
 /*CONTAINERS*/
 /*Generales*/
+.navBar .menuDeNavegacion li a {
+  text-decoration: none;
+  flex-wrap: wrap;
+}
+
 .logoMenuDeNavegacion__container {
   display: flex;
   justify-content: space-evenly;
@@ -148,6 +153,12 @@ body {
 .footer {
   grid-area: footer;
   background-color: rgb(63, 19, 104);
+}
+.footer p {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
 }
 
 /*Index*/
@@ -509,9 +520,7 @@ body {
 /*Generales*/
 .navBar .menuDeNavegacion li a {
   color: white;
-  text-decoration: none;
   font-family: "Bungee";
-  flex-wrap: wrap;
   font-size: 1.8rem;
 }
 
@@ -520,10 +529,6 @@ body {
   color: white;
   font-family: "Russo One";
   font-size: 1.2rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  text-align: center;
 }
 
 /*Index*/

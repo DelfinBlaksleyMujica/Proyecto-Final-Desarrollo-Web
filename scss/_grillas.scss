@@ -113,7 +113,7 @@
 .gallery-container {  
     display: grid;
     grid-template-columns:1fr;
-    grid-template-rows: 0.5fr 0.5fr 2fr 0.1fr;
+    grid-template-rows: 0.5fr 0.5fr 2fr 0.05fr;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;

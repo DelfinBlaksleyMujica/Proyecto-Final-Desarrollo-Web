@@ -59,9 +59,6 @@
 }
 
 
-
-
-
 @media (max-width:$desktop) {
     .logoMenuDeNavegacion a img{
     height:95%;
@@ -90,7 +87,6 @@
     .logoMenuDeNavegacion{
         width: 150px;
     }
-
 }
 
 
@@ -99,29 +95,24 @@
     .footer p{
         font-size:1.14rem;
     }
-    
 }
 
 @media (max-width:$ipadHorizontal) {
     .footer p{
         font-size:1.02rem;
     }
-    
 }
 
 @media (max-width:950px) {
     .footer p{
         font-size:0.95rem;
     }
-    
 }
 
 @media (max-width:$ipadVertical) {
     .footer p{
         font-size:0.85rem;
-
     }
-    
 }
 
 /*Index*/
@@ -143,7 +134,6 @@
         "index__ManteneteActivado__Container"
         "footer";
     }
-    
 }
 
 
@@ -152,28 +142,24 @@
     .index__Titulo__Container h1{
         font-size:$tTitulosDesktopGrandes*0.95;
     }
-    
 }
 
 @media (max-width:$ipadHorizontal) {
     .index__Titulo__Container h1{
         font-size: $tTitulosDesktopGrandes*0.85;
     }
-    
 }
 
 @media (max-width:950px) {
     .index__Titulo__Container h1{
         font-size: $tTitulosDesktopGrandes*0.65;
     }
-    
 }
 
 @media (max-width:$ipadVertical) {
     .index__Titulo__Container h1{
         font-size: $tTitulosDesktopGrandes*0.6;
     }
-    
 }
 
 @media (max-width:1850px) {
@@ -257,7 +243,6 @@
     .index__Texto__Container{
         margin-left: 235px;
     }
-    
 }
 
 @media (max-width:1150px) {
@@ -298,7 +283,6 @@
             font-size: 1.2rem;
         }
     }
-    
 }
 
 @media (max-width:900px) {
@@ -323,14 +307,12 @@
     .index__Texto__Container{
         margin-left: 160px;
     }
-    
 }
 
 @media (max-width:750px) {
     .index__Texto__Container{
         margin-left: 155px;
     }
-    
 }
 
 @media (max-width:700px) {
@@ -345,7 +327,6 @@
         margin-left: 135px;
         height:125px;
     }
-    
 }
 
 
@@ -354,21 +335,18 @@
     .index__Texto__Container{
         margin-left: 125px;
     }
-    
 }
 
 @media (max-width:550px) {
     .index__Texto__Container{
         margin-left: 115px;
     }
-    
 }
 
 @media (max-width:500px) {
     .index__Texto__Container{
         margin-left: 95px;
     }
-    
 }
 
 
@@ -379,14 +357,12 @@
         height:150px;
 
     }
-    
 }
 
 @media (max-width:450px) {
     .index__Texto__Container{
         margin-left: 85px;
     }
-    
 }
 
 @media (max-width:400px) {
@@ -394,7 +370,6 @@
         margin-left: 80px;
         height:170px;
     }
-    
 }
 
 @media (max-width:350px) {
@@ -402,7 +377,6 @@
         margin-left: 68px;
         height:170px;
     }
-    
 }
 
 
@@ -412,28 +386,24 @@
         margin-left: 20px;
         width:90%;
     }
-    
 }
 
 @media (max-width:$desktop) {
     .suscripciones__titulo{
         font-size:2.85rem;
     }
-    
 }
 
 @media (max-width:$ipadHorizontal) {
     .suscripciones__titulo{
         font-size:2.565rem;
     }
-    
 }
 
 @media (max-width:950px) {
     .suscripciones__titulo{
         font-size:2.436rem;
     }
-    
 }
 
 @media (max-width:$ipadVertical) {
@@ -441,7 +411,6 @@
         font-size:1.9rem;
         margin-top: 40px;
     }
-    
 }
 
 
@@ -449,7 +418,6 @@
     .suscripciones__email{
         font-size: 1.4rem;
     }
-    
 }
 
 
@@ -457,28 +425,24 @@
     .suscripciones__email{
         font-size: 1.2rem;
     }
-    
 }
 
 @media (max-width:$tablet) {
     .suscripciones__email{
         font-size: 1rem;
     }
-    
 }
 
 @media (max-width:400px) {
     .suscripciones__email{
         width:150px;
     }
-    
 }
 
 @media (max-width:$mobile) {
     .suscripciones__email{
         width:150px;
     }
-    
 }
 
 @media (max-width:$desktop) {
@@ -487,7 +451,6 @@
         height:47.5px;
         font-size: 1.1rem;
     }
-    
 }
 
 @media (max-width:$ipadHorizontal) {
@@ -496,7 +459,6 @@
         height:42.75px;
         font-size: 0.99rem;
     }
-    
 }
 
 @media (max-width:950px) {
@@ -505,7 +467,6 @@
         height:40.61px;
         font-size: 0.941rem;
     }
-    
 }
 
 @media (max-width:$ipadVertical) {
@@ -514,48 +475,41 @@
         height:31.68px;
         font-size: 0.734rem;
     }
-    
 }
 
 @media (max-width:$desktop) {
     .canales__titulo{
         font-size:2.85rem;
     }
-    
 }
 
 @media (max-width:$ipadHorizontal) {
     .canales__titulo{
         font-size:2.565rem;
     }
-    
 }
 
 @media (max-width:950px) {
     .canales__titulo{
         font-size:2.437rem;
     }
-    
 }
 
 @media (max-width:$ipadVertical) {
     .canales__titulo{
         font-size:1.9rem;
     }
-    
 }
 
 @media (max-width:$mobile) {
     .index__manteneteActivado__canales ul{
         margin-left: -12px;
     }
-    
 }
 
 @media (max-width:$ipadVertical) {
     .logoSpotify{
-        margin-left: -80px;
-    }
+        margin-left: -80px;}
 }
 
 @media (max-width:$tablet) {
@@ -594,7 +548,6 @@
         "World__AboutUs__Container"
         "footer";
     }
-    
 }
 
 
@@ -602,28 +555,24 @@
     .World__Titulo__Container h1{
         font-size:$tTitulosDesktopGrandes*0.95;
     }
-    
 }
 
 @media (max-width:$ipadHorizontal) {
     .World__Titulo__Container h1{
         font-size:$tTitulosDesktopGrandes*0.85;
     }
-    
 }
 
 @media (max-width:950px) {
     .World__Titulo__Container h1{
         font-size:$tTitulosDesktopGrandes*0.65;
     }
-    
 }
 
 @media (max-width:$ipadVertical) {
     .World__Titulo__Container h1{
         font-size:$tTitulosDesktopGrandes*0.6;
     }
-    
 }
 
 @media (max-width:$desktop) {
@@ -631,7 +580,6 @@
         width: 95px;
         height:95px;
     }
-    
 }
 
 @media (max-width:$ipadHorizontal) {
@@ -639,7 +587,6 @@
         width: 85px;
         height:85px;
     }
-    
 }
 
 @media (max-width:950px) {
@@ -647,7 +594,6 @@
         width: 80px;
         height:80px;
     }
-    
 }
 
 @media (max-width:$ipadVertical) {
@@ -655,7 +601,6 @@
         width: 62.4px;
         height:62.4px;
     }
-    
 }
 
 @media (max-width:$desktop) {
@@ -700,7 +645,6 @@
         width:85%;
         margin-left: 30px;
     }
-    
 }
 
 
@@ -746,7 +690,6 @@
         width:85%;
         margin-left: 30px;
     }
-    
 }
 
 
@@ -792,7 +735,6 @@
         width:85%;
         margin-left: 30px;
     }
-    
 }
 
 
@@ -830,32 +772,28 @@
 }
 
 @media (max-width:$ipadVertical) {
-  .merchandise__main__container p{
+    .merchandise__main__container p{
     font-size: 5.5rem;
-  }
-  
+}
 }
 
 
 @media (max-width:$ipadVertical) {
-  .merchandise__main__container p{
+.merchandise__main__container p{
     font-size: 5rem;
-  }
-  
+}
 }
 
 @media (max-width:$mobileHorizontal) {
-  .merchandise__main__container p{
+    .merchandise__main__container p{
     font-size: 4.5rem;
-  }
-  
+}
 }
 
 @media (max-width:$mobile) {
-  .merchandise__main__container p{
+    .merchandise__main__container p{
     font-size: 4rem;
-  }
-  
+}
 }
 
 /*Indoors*/
@@ -875,7 +813,6 @@
         "indoors__CapitulosyDescripciones__Container"
         "footer";
     }
-    
 }
 
 @media (max-width:320px) {
@@ -893,7 +830,6 @@
         "indoors__CapitulosyDescripciones__Container"
         "footer";
     }
-    
 }
 
 
@@ -903,14 +839,12 @@
     .indoors__Titulo__Container h1{
         font-size:$tTitulosDesktopGrandes*0.95;
     }
-    
 }
 
 @media (max-width:$ipadHorizontal) {
     .indoors__Titulo__Container h1{
         font-size:$tTitulosDesktopGrandes*0.85;
     }
-    
 }
 
 @media (max-width:950px) {
@@ -985,7 +919,6 @@
     .indoors__temporada1__descripcion1 h3{
         font-size:2.85rem;
     }
-    
 }
 
 
@@ -993,21 +926,18 @@
     .indoors__temporada1__descripcion1 h3{
         font-size:2.565rem;
     }
-    
 }
 
 @media (max-width:950px) {
     .indoors__temporada1__descripcion1 h3{
         font-size:2.437rem;
     }
-    
 }
 
 @media (max-width:$ipadVertical) {
     .indoors__temporada1__descripcion1 h3{
         font-size:1.9rem;
     }
-    
 }
 
 
@@ -1016,7 +946,6 @@
     .indoors__temporada1__descripcion1 p{
         font-size: 1.4rem;
     }
-    
 }
 
 
@@ -1066,7 +995,6 @@
         "gallery__main__container"
         "footer";
     }
-    
 }
 
 @media (max-width:960px) {
@@ -1083,7 +1011,6 @@
         "gallery__main__container"
         "footer";
     }
-    
 }
 
 @media (max-width:640px) {
@@ -1100,7 +1027,6 @@
         "gallery__main__container"
         "footer";
     }
-    
 }
 
 @media (max-width:619px) {
@@ -1117,7 +1043,6 @@
         "gallery__main__container"
         "footer";
     }
-    
 }
 
 @media (max-width:320px) {
@@ -1134,7 +1059,6 @@
         "gallery__main__container"
         "footer";
     }
-    
 }
 
 
@@ -1143,28 +1067,24 @@
     .gallery__titulo__container h1{
         font-size: $tTitulosDesktopGrandes*0.95;
     }
-    
 }
 
 @media (max-width:$ipadHorizontal) {
     .gallery__titulo__container h1{
         font-size: $tTitulosDesktopGrandes*0.85;
     }
-    
 }
 
 @media (max-width:950px) {
     .gallery__titulo__container h1{
         font-size: $tTitulosDesktopGrandes*0.65;
     }
-    
 }
 
 @media (max-width:$ipadVertical) {
     .gallery__titulo__container h1{
         font-size: $tTitulosDesktopGrandes*0.6;
     }
-    
 }
 
 
@@ -1185,7 +1105,6 @@
         "contact__main__container"
         "footer";
     }
-    
 }
 
 @media (max-width:$mobile) {
@@ -1202,7 +1121,6 @@
         "contact__main__container"
         "footer";
     }
-    
 }
 
 
@@ -1235,7 +1153,6 @@
     .contact__main__NuestroContacto{
         font-size: 1.4rem;
     }
-    
 }
 
 
@@ -1243,7 +1160,6 @@
     .contact__main__NuestroContacto{
         font-size: 1.2rem;
     }
-    
 }
 
 @media (max-width:479px) {
@@ -1255,7 +1171,6 @@
             margin-top: 20px;
         }
     }
-    
 }
 
 
@@ -1263,14 +1178,12 @@
     .contact__main__NuestroContacto{
         font-size: 10px;
     }
-    
 }
 
 @media (max-width:$ipadVertical) {
     .contact__main__NuestroContacto{
         margin-left: -55px;
     }
-    
 }
 
 @media (max-width:$mobileHorizontal) {
@@ -1285,14 +1198,12 @@
     #nombre{
         font-size: 1.2rem;
     }
-    
 }
 
 @media (max-width:$ipadVertical) {
     #nombre{
         font-size: 1.1rem;
     }
-    
 }
 
 
@@ -1300,14 +1211,12 @@
     #mail{
         font-size: 1.2rem;
     }
-    
 }
 
 @media (max-width:$ipadVertical) {
     #mail{
         font-size: 1.1rem;
     }
-    
 }
 
 
@@ -1315,14 +1224,12 @@
     #telefono{
         font-size: 1.2rem;
     }
-    
 }
 
 @media (max-width:$ipadVertical) {
     #telefono{
         font-size: 1.1rem;
     }
-    
 }
 
 
@@ -1331,14 +1238,12 @@
     #empresa{
         font-size: 1.2rem;
     }
-    
 }
 
 @media (max-width:$ipadVertical) {
     #empresa{
         font-size: 1.1rem;
     }
-    
 }
 
 
@@ -1346,35 +1251,30 @@
     #asunto{
         font-size: 1.2rem;
     }
-    
 }
 
 @media (max-width:$ipadVertical) {
     #asunto{
         font-size: 1.1rem;
     }
-    
 }
 
 @media (max-width:$ipadHorizontal) {
     #mensaje{
         font-size: 1.2rem;
     }
-    
 }
 
 @media (max-width:$ipadVertical) {
     #mensaje{
         font-size: 1rem;
     }
-    
 }
 
 @media (max-width:$mobileHorizontal) {
     #mensaje{
         font-size: 1.1rem;
     }
-    
 }
 
 @media (max-width:2000px) {
@@ -1399,14 +1299,12 @@
     #botonEnviarContactos{
         margin-left:850px;
     }
-    
 }
 
 @media (max-width:1800px) {
     #botonEnviarContactos{
         margin-left:830px;
     }
-    
 }
 
 
@@ -1415,49 +1313,42 @@
     #botonEnviarContactos{
         margin-left:805px;
     }
-    
 }
 
 @media (max-width:1700px) {
     #botonEnviarContactos{
         margin-left:780px;
     }
-    
 }
 
 @media (max-width:1650px) {
     #botonEnviarContactos{
         margin-left:760px;
     }
-    
 }
 
 @media (max-width:1600px) {
     #botonEnviarContactos{
         margin-left:725px;
     }
-    
 }
 
 @media (max-width:1550px) {
     #botonEnviarContactos{
         margin-left:700px;
     }
-    
 }
 
 @media (max-width:1500px) {
     #botonEnviarContactos{
         margin-left:670px;
     }
-    
 }
 
 @media (max-width:1500px) {
     #botonEnviarContactos{
         margin-left:650px;
     }
-    
 }
 
 @media (max-width:$desktopGrandes) {
@@ -1490,9 +1381,7 @@
         width:142.5px;
         height:47.5px;
         font-size: 1.1rem;
-
     }
-    
 }
 
 @media (max-width:1150px) {

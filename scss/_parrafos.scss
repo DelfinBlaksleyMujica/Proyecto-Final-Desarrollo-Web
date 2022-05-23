@@ -4,9 +4,7 @@
 /*Generales*/
 .navBar .menuDeNavegacion li a{
     color:$colorTextoMenuDeNavegacion;
-    text-decoration: none;
     font-family: $tipogrfiaMenuDeNavegacion;
-    flex-wrap: wrap;
     font-size: $tFuenteMenuDeNavegacion;
 }
 
@@ -16,8 +14,6 @@
     color: $colorTextoFooter;
     font-family: $tipografiaFooter;
     font-size: $tFuenteFooter;
-    @include flex-row-spaceAround;
-    text-align: center;
 }
 
 
