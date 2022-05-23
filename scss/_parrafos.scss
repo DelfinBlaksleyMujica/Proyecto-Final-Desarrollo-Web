@@ -1,4 +1,7 @@
-/*GENERALES*/
+/*PARRAFOS*/
+
+
+/*Generales*/
 .navBar .menuDeNavegacion li a{
     color:$colorTextoMenuDeNavegacion;
     text-decoration: none;
@@ -18,7 +21,7 @@
 }
 
 
-/*INDEX*/
+/*Index*/
 
 
 .index__Texto__Container p{
@@ -30,7 +33,7 @@
     font-family: $tipografiaFormularios;
     font-size: $tTipografiaFormularios;
 }
-/*WORLD*/
+/*World*/
 
 
 .world__Textos__1 p{
@@ -51,11 +54,8 @@
     font-size: $tParrafos;
 }
 
-/*MERCHANDISE*/
 
-
-
-/*INDOORS*/
+/*Indoors*/
 
 .indoors__temporada1__descripcion1 p{
     font-size: $tParrafos;
@@ -64,7 +64,7 @@
     
 }
 
-/*GALERIA*/
+/*Galeria*/
 
 .gallery__text__container p{
     font-family: $tipografiaTextos;
@@ -72,7 +72,7 @@
     color: $colorTextos;
 }
 
-/*CONTACTO*/
+/*Contacto*/
 
 .contact__main__NuestroContacto{
     color:$colorTextos;

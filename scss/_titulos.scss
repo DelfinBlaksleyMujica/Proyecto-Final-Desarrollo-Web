@@ -1,4 +1,6 @@
-/*INDEX*/
+/*TITULOS*/
+
+/*Index*/
 
 .index__Titulo__Container h1{
     font-size: map-get($map: $tituloDePagina, $key: tFuente );
@@ -20,7 +22,7 @@
     margin-top: 0;
 }
 
-/*WORLD*/
+/*World*/
 
 .World__Titulo__Container h1{
     font-size: map-get($map: $tituloDePagina, $key: tFuente );
@@ -48,7 +50,7 @@
     font-family: map-get($map: $titulosEnPagina, $key:tFamilia );
 }
 
-/*MERCHANDISE*/
+/*Merchandise*/
 
 .merchandise__main__container p{
     color:map-get($map: $tituloMerchandise, $key:color );
@@ -57,7 +59,7 @@
     -webkit-text-stroke:map-get($map: $tituloMerchandise, $key:estilo);
 }
 
-/*INDOORS*/
+/*Indoors*/
 
 .indoors__Titulo__Container h1{
     font-size: map-get($map: $tituloDePagina, $key: tFuente );
@@ -74,7 +76,7 @@
     font-family: map-get($map: $titulosEnPagina, $key:tFamilia );
 }
 
-/*GALERIA*/
+/*Galeria*/
 
 .gallery__titulo__container h1{
     font-size: map-get($map: $tituloDePagina, $key: tFuente );
@@ -84,7 +86,7 @@
 }
 
 
-/*CONTACTO*/
+/*Contacto*/
 
 .contact__title{ 
     font-size: map-get($map: $tituloDePagina, $key: tFuente );

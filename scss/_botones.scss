@@ -1,4 +1,7 @@
-/*INDEX*/
+/*BOTONES*/
+
+
+/*Index*/
 
 .suscripciones__button{
     @extend .boton;
@@ -8,7 +11,7 @@
     }
 }
 
-/*INDOORS*/
+/*Indoors*/
 
 #episodios__selectTemporada{
     @extend .boton;
@@ -18,7 +21,7 @@
     }
 }
 
-/*CONTACTO*/
+/*Contacto*/
 
 #botonEnviarContactos{
     @extend .boton;

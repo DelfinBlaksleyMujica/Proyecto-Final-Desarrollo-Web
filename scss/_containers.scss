@@ -1,4 +1,7 @@
-/*GENERALES*/
+/*CONTAINERS*/
+
+
+/*Generales*/
 
 .logoMenuDeNavegacion__container{
     @include flex-spaceEvenly;
@@ -24,7 +27,7 @@
 }
 
 
-/*INDEX*/
+/*Index*/
 
 .index__Titulo__Container { 
     grid-area: index__Titulo__Container;
@@ -48,7 +51,7 @@
     background-color: white;
     border-radius: 20px; 
     text-align: center;
-    width:50%;
+    width:60%;
     p{
         text-align: center;
     }
@@ -89,7 +92,7 @@
 
 }
 
-/*WORLD*/
+/*World*/
 
 .World__Titulo__Container { 
     grid-area: World__Titulo__Container;
@@ -147,7 +150,7 @@
 }
 
 
-/*MERCHANDISE*/
+/*Merchandise*/
 
 .merchandise__main__container { 
     grid-area: merchandise__main__container;
@@ -158,7 +161,7 @@
     background-position: center;
 }
 
-/*INDOORS*/
+/*Indoors*/
 
 .indoors__Titulo__Container h1{
     grid-area:indoors__Titulo__Container;
@@ -174,6 +177,10 @@
 .indoors__temporada1__episodio1 { 
     grid-area: indoors__temporada1__episodio1;
     @include flex-row-spaceAround;
+    align-items: center;
+    video{
+        height:500px;
+    }
 }
 
 .indoors__temporada1__descripcion1{ 
@@ -188,7 +195,7 @@
 }
 
 
-/*GALERIA*/
+/*Galeria*/
 
 .gallery__titulo__container h1{ 
     grid-area: gallery__titulo__container;
@@ -211,7 +218,7 @@
     }
 }
 
-/*CONTACTO*/
+/*Contacto*/
 
 .contact__title{
     @include flex-spaceEvenly;
